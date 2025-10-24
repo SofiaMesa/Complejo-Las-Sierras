@@ -1,0 +1,184 @@
+<!-- _partial-formulario.html -->
+
+<section class="form-container">
+  <!-- =========================================================
+  = FORMULARIO DE RESERVA (multistep, accesible)
+  ========================================================= -->
+  <form id="reserva" class="form" action="#" method="POST" novalidate>
+    
+    <!-- =====================================================
+    = PASO 1: Fechas
+    ====================================================== -->
+    <fieldset class="step active" aria-describedby="ayuda-fechas">
+      <legend>Paso 1: Fechas</legend>
+
+      <p id="ayuda-fechas" class="res-help">
+        Ingresá fecha de ingreso y egreso. Confirmá que el checkout sea posterior al checkin.
+      </p>
+
+      <label for="checkin">Fecha de ingreso</label>
+      <input id="checkin" type="date" name="checkin" required autocomplete="off" />
+
+      <label for="checkout">Fecha de egreso</label>
+      <input id="checkout" type="date" name="checkout" required autocomplete="off" />
+
+      <button type="button" class="next">Siguiente</button>
+    </fieldset>
+
+    <!-- =====================================================
+    = PASO 2: Datos de contacto
+    ====================================================== -->
+    <fieldset class="step" aria-describedby="ayuda-contacto">
+      <legend>Paso 2: Tus datos</legend>
+
+      <p id="ayuda-contacto" class="res-help">
+        Usaremos estos datos solo para responder tu consulta.
+      </p>
+
+      <label for="nombre">Nombre y apellido</label>
+      <input
+        id="nombre"
+        type="text"
+        name="nombre"
+        required
+        autocomplete="name"
+        placeholder="Nombre Apellido"
+      />
+
+      <label for="provincia">Provincia</label>
+      <input
+        id="provincia"
+        type="text"
+        name="provincia"
+        required
+        autocomplete="address-level1"
+        placeholder="Ej. Córdoba"
+      />
+
+      <label for="whatsapp">WhatsApp</label>
+      <input
+        id="whatsapp"
+        type="tel"
+        name="whatsapp"
+        required
+        inputmode="tel"
+        autocomplete="tel"
+        placeholder="1160248224"
+        pattern="^\+?\d{7,15}$"
+        title="Ingresá solo números con código de área, sin guiones ni espacios. Ej: 1160248224"
+        aria-describedby="ayuda-whatsapp"
+      />
+      <span id="ayuda-whatsapp" class="res-help">
+        Con código de área. Sin guiones ni espacios.
+      </span>
+
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="tu@email.com"
+      />
+
+      <div class="form-nav" style="display:flex; gap:.75rem; flex-wrap:wrap;">
+        <button type="button" class="prev">Atrás</button>
+        <button type="button" class="next">Siguiente</button>
+      </div>
+    </fieldset>
+
+    <!-- =====================================================
+    = PASO 3: Alojamiento
+    ====================================================== -->
+    <fieldset class="step" aria-describedby="ayuda-alojamiento">
+      <legend>Paso 3: Alojamiento</legend>
+
+      <p id="ayuda-alojamiento" class="res-help">
+        Elegí el tipo de unidad, la cantidad de huéspedes y agregá comentarios.
+      </p>
+
+      <label for="tipo">Tipo</label>
+      <select id="tipo" name="tipo" required>
+        <option value="" selected disabled>Elegí una opción</option>
+        <option value="cabana-simple">Cabaña Simple</option>
+        <option value="cabana-especial">Cabaña Especial</option>
+        <option value="bungalow-simple">Bungalow Simple (baños públicos)</option>
+        <option value="bungalow-exterior">Bungalow Baño exterior privado</option>
+        <option value="bungalow-interno">Bungalow Baño interno</option>
+      </select>
+
+      <label for="huespedes">Cantidad de huéspedes</label>
+      <input
+        id="huespedes"
+        type="number"
+        name="huespedes"
+        min="1"
+        step="1"
+        inputmode="numeric"
+        required
+        placeholder="Ej. 4"
+      />
+
+      <label for="preferencias">Comentarios</label>
+      <textarea
+        id="preferencias"
+        name="preferencias"
+        rows="3"
+        placeholder="Cerca de la piscina, tenemos un bebé, etc."
+      ></textarea>
+
+      <div class="form-nav" style="display:flex; gap:.75rem; flex-wrap:wrap;">
+        <button type="button" class="prev">Atrás</button>
+        <button type="submit" class="submit">Solicitar reserva</button>
+      </div>
+    </fieldset>
+
+    <!-- =====================================================
+    = ACCIÓN OPCIONAL: Continuar por WhatsApp
+    ====================================================== -->
+    <div class="actions">
+      <a
+        class="btn btn--whatsapp is-disabled"
+        id="waLink"
+        href="#"
+        target="_blank"
+        rel="noopener"
+        aria-disabled="true"
+      >
+        Continuar por WhatsApp
+      </a>
+    </div>
+
+    <!-- =====================================================
+    = HONEYPOT (anti-bots)
+    ====================================================== -->
+    <input
+      type="text"
+      name="empresa"
+      class="hidden"
+      tabindex="-1"
+      aria-hidden="true"
+      autocomplete="off"
+    />
+  </form>
+
+  <!-- =========================================================
+  = MENSAJE DE CONFIRMACIÓN (post-submit)
+  ========================================================= -->
+  <div class="confirmation hidden" role="status" aria-live="polite">
+    <h3>Gracias, tu solicitud fue enviada.</h3>
+    <p>En breve nuestro equipo se estará contactando con vos para continuar con la reserva.</p>
+    <div class="confirmation-actions">
+      <a
+        class="btn btn--whatsapp"
+        id="waLinkFinal"
+        href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola%2C+ya+envi%C3%A9+mi+reserva"
+        target="_blank"
+        rel="noopener"
+      >
+        Continuar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>

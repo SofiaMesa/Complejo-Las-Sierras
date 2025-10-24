@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <!-- =========================================================
+  = 1) META / SEO
+  ========================================================= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acampe | Complejo Las Sierras</title>
+  <meta name="description" content="Zona de acampe en Nono con todos los servicios: quinchos, parrillas, baños con agua caliente, proveeduría y acceso directo al río." />
+  <meta name="theme-color" content="#476D54" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Acampe · Complejo Las Sierras" />
+  <meta property="og:description" content="Disfrutá de nuestra zona de acampe en Nono, con parque, pileta y río." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/logo-las-sierras.png" />
+
+  <!-- =========================================================
+  = 2) FUENTES / ICONO / CSS
+  ========================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/logo-las-sierras.png" type="image/png" />
+  <link rel="stylesheet" href="style.css?v=8" />
+
+  <!-- Quitar .no-js al toque -->
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+
+<body class="acampe-page">
+  <!-- =========================================================
+  = 3) SKIP LINK (ACCESIBILIDAD)
+  ========================================================= -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =========================================================
+  = 4) HEADER (INCLUDE DINÁMICO)
+  ========================================================= -->
+  <div data-include="header.html" data-include-root="true"></div>
+
+  <!-- =========================================================
+  = 5) HERO
+  ========================================================= -->
+  <section class="banner cab-hero" aria-labelledby="titulo-acampe">
+    <div class="banner__inner">
+      <h1 id="titulo-acampe">Acampe</h1>
+      <p class="banner__subtitle">Viví la experiencia completa de las sierras en nuestro parque arbolado</p>
+      <div class="botones-banner" role="group" aria-label="Acciones">
+        <a class="btn" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  = 6) MAIN
+  ========================================================= -->
+  <main id="contenido" tabindex="-1">
+    <!-- 6.1) MIGAS / BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Acampe</li>
+      </ol>
+    </nav>
+
+    <!-- 6.2) INTRO ACAMPE -->
+    <section class="bienvenida cab-intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Nuestra zona de acampe</h2>
+      <p>Un amplio espacio verde con parcelas para que elijas tu lugar ideal. Disfrutá de la sombra de nuestros árboles, la cercanía al río y el acceso a todas las instalaciones del complejo.</p>
+      <ul>
+        <li>Aceptamos <strong>mascotas</strong> con previo aviso.</li>
+        <li>Check in: <strong>12:00</strong> · Check out: <strong>10:00</strong>.</li>
+        <li>No se toman reservas, siempre hay lugar.</li>
+      </ul>
+    </section>
+
+    <!-- 6.3) SERVICIOS / GALERÍA 4 TARJETAS -->
+    <section id="servicios" class="acampe-servicios" aria-labelledby="servicios-title">
+      <h2 id="servicios-title">Servicios principales</h2>
+
+      <div class="cards acampe-galeria" role="list">
+        <!-- Quinchos -->
+        <article class="card acampe-card" role="listitem">
+          <img src="img/Acampe/Quinchos19.jpeg" alt="Quincho techado con mesas, bancos y parrilla de material." loading="lazy" decoding="async" />
+          <div class="card__body">
+            <h3 class="h3">Parcelas con o sin quincho</h3>
+            <p>Todas las parcelas incluyen parrilla con asador y tomacorriente.</p>
+          </div>
+        </article>
+
+        <!-- Pileta -->
+        <article class="card acampe-card" role="listitem">
+          <img src="img/Acampe/Pileta8.jpeg" alt="Piscina semiolímpica con solarium junto a áreas verdes." loading="lazy" decoding="async" />
+          <div class="card__body">
+            <h3 class="h3">Piscina Semiolímpica</h3>
+            <p>Con solarium para descansar y tomar sol.</p>
+          </div>
+        </article>
+
+        <!-- Proveeduría -->
+        <article class="card acampe-card" role="listitem">
+          <img src="img/Acampe/Proveduria2.png" alt="Mostrador de la proveeduría con productos básicos." loading="lazy" decoding="async" />
+          <div class="card__body">
+            <h3 class="h3">Proveeduría</h3>
+            <p>Hielo, bebidas frías, leña, carbón y otros básicos sin salir del complejo.</p>
+          </div>
+        </article>
+
+        <!-- Río -->
+        <article class="card acampe-card" role="listitem">
+          <img src="img/Acampe/Rio8.jpeg" alt="Bajada y playa sobre el Río Chico de Nono rodeada de vegetación." loading="lazy" decoding="async" />
+          <div class="card__body">
+            <h3 class="h3">Acceso al Río</h3>
+            <p>Bajada directa al Río Chico de Nono para refrescarse y descansar.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6.4) CTA WHATSAPP -->
+    <section class="cab-politicas" aria-labelledby="politicas-title">
+      <h2 id="politicas-title">¿Tenés dudas?</h2>
+      <div class="cta">
+        <p>Estamos para ayudarte a planificar tu estadía. ¡Consultanos lo que necesites!</p>
+        <a class="btn btn--whatsapp" href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola%2C+quisiera+consultar+por+la+zona+de+acampe" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+  = 7) FOOTER (INCLUDE DINÁMICO)
+  ========================================================= -->
+  <div data-include="footer.html" data-include-root="true"></div>
+
+  <!-- =========================================================
+  = 8) BOTÓN FLOTANTE WHATSAPP
+  ========================================================= -->
+  <a class="whatsapp"
+     href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola%2C+quisiera+hacer+una+consulta+sobre+el+acampe"
+     target="_blank" rel="noopener"
+     aria-label="Escribinos por WhatsApp">
+    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="" width="32" height="32" />
+  </a>
+
+  <!-- =========================================================
+  = 9) SCRIPTS
+  ========================================================= -->
+  <script src="includes.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

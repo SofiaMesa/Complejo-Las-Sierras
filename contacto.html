@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | Complejo Las Sierras</title>
+  <meta name="description" content="Escribinos por WhatsApp o email. También podés usar el formulario." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ajustes puntuales de la página (no rompen tu style.css) -->
+  <style>
+    /* Evita que el footer fijo tape el contenido. Si tu footer NO es fixed, no molesta. */
+    :root { --footer-safe: 112px; }
+    @media (max-width: 480px) { :root { --footer-safe: 128px; } }
+
+    .contacto-main { padding-bottom: var(--footer-safe); }
+    .contacto-hero { margin: clamp(16px, 3vw, 32px) 0; }
+    .contacto-title { margin: 0 0 .25rem 0; }
+    .map-embed iframe { width: 100%; min-height: 280px; border: 0; border-radius: 12px; }
+    .hp { position: absolute !important; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; } /* honeypot oculto accesible */
+  </style>
+</head>
+<body>
+  <!-- Header -->
+<div data-include="header.html" data-include-root="true"></div>
+
+  <main id="main" class="contacto-main">
+    <!-- Migas -->
+    <nav class="breadcrumb" aria-label="Ruta">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Contacto</li>
+      </ol>
+    </nav>
+
+    <header class="contacto-hero">
+      <h1 class="contacto-title" id="contacto-title">Contacto</h1>
+      <p class="contacto-subtitle" id="contacto-subtitle">Estamos en Nono, Córdoba. Escribinos por WhatsApp o completá el formulario y te respondemos.</p>
+    </header>
+
+    <section class="contacto-grid" aria-labelledby="contacto-form-title">
+      <!-- Formulario -->
+      <article class="card contacto-card">
+        <h2 id="contacto-form-title" class="sec-title">Escribinos</h2>
+
+        <!-- FORMULARIO UNIFICADO: postea en Apps Script y mantiene fallback a WhatsApp -->
+        <form id="contacto-form"
+              class="form"
+              action="https://script.google.com/macros/s/AKfycbwrunOg8TvxgV7RJP6ixqkN9JdJD6Zvr5XvLY99Oh63UX1v7TaFoLwiZ5DfXALzq1mL/exec"
+              method="POST"
+              novalidate
+              aria-describedby="contacto-subtitle">
+          <input type="hidden" name="form_type" value="contacto">
+          <input type="hidden" name="source" value="contacto.html">
+
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre" required autocomplete="name" placeholder="Tu nombre" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required autocomplete="email" placeholder="tu@mail.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="telefono">WhatsApp (opcional)</label>
+            <input id="telefono" type="tel" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="+54 9 ..." />
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Contanos fechas, cantidad de personas y cualquier detalle útil."></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <input type="text" name="empresa" class="hp" tabindex="-1" aria-hidden="true" />
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Enviar consulta</button>
+            <a class="btn btn--ghost" id="cta-wapp" target="_blank" rel="noopener"
+               href="https://wa.me/5491160248224?text=Hola%20Complejo%20Las%20Sierras,%20quiero%20hacer%20una%20consulta%20desde%20la%20web.">
+              Escribir por WhatsApp
+            </a>
+          </div>
+
+          <div class="form__feedback" id="contacto-feedback" aria-live="polite"></div>
+        </form>
+      </article>
+
+      <!-- Datos + Mapa -->
+      <aside class="card contacto-info">
+        <h2 class="sec-title">Datos de contacto</h2>
+        <ul class="contacto-list">
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5491160248224" target="_blank" rel="noopener">+54 9 11 6024 8224</a></li>
+          <li><strong>Email:</strong> <a href="mailto:lassierrascamping@gmail.com">lassierrascamping@gmail.com</a></li>
+          <li><strong>Ubicación:</strong> Nono, Córdoba, Argentina</li>
+        </ul>
+
+        <div class="map-embed">
+          <iframe title="Mapa Complejo Las Sierras" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.6303673882415!2d-65.0075354848899!3d-31.80279637969114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d293195c26865%3A0x6fde6c81ce868359!2sComplejo%20Las%20Sierras!5e0!3m2!1ses-419!2sar!4v1713720749325!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <p class="note">Respuesta usual dentro de 24 h. Si te corre la ansiedad, WhatsApp es más rápido.</p>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<div data-include="footer.html" data-include-root="true"></div>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="whatsapp"
+     href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola,+quisiera+hacer+una+consulta+sobre+las+caba%C3%B1as"
+     target="_blank" rel="noopener"
+     aria-label="Escribinos por WhatsApp">
+    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="" width="32" height="32" />
+  </a>
+
+  <!-- Scripts -->
+  <script src="includes.js" defer></script>
+  <!-- Si tenés un script global, dejalo. Si no existe, quitá la línea de abajo. -->
+  <script src="script.js" defer></script>
+
+  <script>
+    // Endpoint de Apps Script (Web App desplegada)
+    const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbwrunOg8TvxgV7RJP6ixqkN9JdJD6Zvr5XvLY99Oh63UX1v7TaFoLwiZ5DfXALzq1mL/exec";
+
+    const form = document.getElementById('contacto-form');
+    const feedback = document.getElementById('contacto-feedback');
+    const wappCta = document.getElementById('cta-wapp');
+
+    function setFeedback(msg, type = 'info') {
+      if (!feedback) return;
+      feedback.textContent = msg;
+      feedback.className = 'form__feedback ' + type;
+    }
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const data = new FormData(form);
+
+      // Honeypot
+      if ((data.get('empresa') || '').trim() !== '') {
+        setFeedback('Listo.', 'success'); // spam ignorado con elegancia
+        form.reset();
+        return;
+      }
+
+      // Validación mínima
+      const nombre = (data.get('nombre') || '').trim();
+      const email = (data.get('email') || '').trim();
+      const mensaje = (data.get('mensaje') || '').trim();
+
+      if (!nombre || !email || !mensaje) {
+        setFeedback('Completá nombre, email y mensaje.', 'error');
+        return;
+      }
+
+      setFeedback('Enviando...', 'loading');
+
+      try {
+        if (!FORM_ENDPOINT) {
+          // Fallback: WhatsApp si no hay endpoint configurado
+          const texto = encodeURIComponent(`Hola, soy ${nombre}. Mi email es ${email}. Consulta: ${mensaje}`);
+          wappCta.href = `https://wa.me/5491160248224?text=${texto}`;
+          setFeedback('No hay endpoint configurado. Te paso a WhatsApp para que no se pierda el mensaje.', 'warning');
+          wappCta.focus();
+          return;
+        }
+
+        const res = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          mode: 'cors',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+
+        if (!res.ok) throw new Error('Error de red');
+        const json = await res.json().catch(() => ({}));
+
+        if (json && (json.result === 'success' || json.status === 'ok')) {
+          setFeedback('Gracias, tu consulta fue enviada. Te respondemos a la brevedad.', 'success');
+          form.reset();
+        } else {
+          setFeedback('No se pudo enviar. Probá por WhatsApp mientras tanto.', 'warning');
+        }
+      } catch (err) {
+        setFeedback('Ups. Falló el envío. Probá por WhatsApp.', 'error');
+      }
+    });
+  </script>
+</body>
+</html>

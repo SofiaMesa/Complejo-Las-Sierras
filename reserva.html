@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <!-- =========================================================
+  = 1) META / SEO
+  ========================================================= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reserva | Complejo Las Sierras</title>
+  <meta name="description" content="Consultá disponibilidad y realizá tu reserva en Complejo Las Sierras." />
+  <meta name="theme-color" content="#476D54" />
+
+  <!-- (Opcional) Open Graph básico -->
+  <meta property="og:title" content="Reserva · Complejo Las Sierras" />
+  <meta property="og:description" content="Consultá disponibilidad y realizá tu reserva." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/logo-las-sierras.png" />
+
+  <!-- =========================================================
+  = 2) CSS
+  ========================================================= -->
+  <link rel="stylesheet" href="style.css?v=4" />
+
+  <!-- Quitar .no-js al instante -->
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+
+<body class="reserva-page">
+  <!-- =========================================================
+  = 3) SKIP LINK (ACCESIBILIDAD)
+  ========================================================= -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- =========================================================
+  = 4) HEADER (INCLUDE DINÁMICO)
+  ========================================================= -->
+  <div data-include="header.html" data-include-root="true"></div>
+
+  <!-- =========================================================
+  = 5) CONTENIDO PRINCIPAL
+  ========================================================= -->
+  <main id="main" class="reserva reserva-scope" tabindex="-1">
+    <!-- 5.1) Migas / Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Ruta">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Reserva</li>
+      </ol>
+    </nav>
+
+    <!-- 5.2) Encabezado de página -->
+    <header class="reserva-header">
+      <h1>Consultá disponibilidad y reservá tu estadía</h1>
+      <p>Completá los pasos para enviarnos tu solicitud de reserva. Nuestro equipo te responderá a la brevedad.</p>
+    </header>
+
+    <!-- 5.3) Formulario (include parcial) -->
+    <div data-include="_partial-formulario.html"></div>
+    <!-- Si el include necesita rutas desde raíz del repo, usá data-include-root="true" -->
+  </main>
+
+  <!-- =========================================================
+  = 6) FOOTER (INCLUDE DINÁMICO)
+  ========================================================= -->
+  <div data-include="footer.html" data-include-root="true"></div>
+
+  <!-- =========================================================
+  = 7) SCRIPTS
+  ========================================================= -->
+  <script src="includes.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="formulario-reserva.js" defer></script>
+
+  <!-- 7.1) Fallback sin JS -->
+  <noscript>
+    <p class="noscript-msg">Para completar la reserva necesitás habilitar JavaScript.</p>
+  </noscript>
+</body>
+</html>

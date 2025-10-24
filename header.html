@@ -1,0 +1,35 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+<header>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="logo-header">
+    <a href="index.html">
+      <img src="img/logo-las-sierras.png" alt="Logo Complejo Las Sierras">
+    </a>
+  </div>
+</header>
+
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+<div class="sidebar" id="sidebar">
+  <button class="close-btn" onclick="closeMenu()">×</button>
+  <div class="logo-sidebar">
+    <img src="img/logo-las-sierras.png" alt="Logo Complejo Las Sierras">
+  </div>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="reserva.html">RESERVAR</a></li>
+    <li><a href="cabanas.html">Cabañas</a></li>
+    <li><a href="bungalows.html">Bungalows</a></li>
+    <li><a href="acampe.html">Acampe</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</div>
+
+<div id="page-bar" class="page-bar" role="region" aria-label="Título de la página">
+  <div class="page-bar__inner">
+    <p id="page-title" class="page-title" aria-hidden="true"></p>
+  </div>
+</div>

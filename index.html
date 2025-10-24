@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Complejo Las Sierras</title>
+
+  <!-- ===================== FUENTES ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- ===================== FAVICON ===================== -->
+  <link rel="icon" href="img/logo-las-sierras.png" type="image/png" />
+
+  <!-- ===================== ESTILOS ===================== -->
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <!-- ===================== HEADER ===================== -->
+<div data-include="header.html" data-include-root="true"></div>
+
+  <!-- ===================== MENÚ LATERAL ===================== -->
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeMenu()">×</button>
+    <div class="logo-sidebar">
+      <img src="img/logo-las-sierras.png" alt="Logo Complejo Las Sierras" />
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cabanas.html">Cabañas</a></li>
+      <li><a href="bungalows.html">Bungalows</a></li>
+      <li><a href="acampe.html">Acampe</a></li>
+      <li><a href="reserva.html">RESERVAR</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== BANNER ===================== -->
+  <section class="banner">
+    <h1>Complejo Las Sierras</h1>
+    <p>Tu escape natural en el corazón de Nono</p>
+    <div class="botones-banner">
+      <a class="btn-banner" href="reserva.html">RESERVAR AHORA</a>
+      <a href="cabanas.html">Ver Cabañas</a>
+      <a href="bungalows.html">Ver Bungalows</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <main>
+    <!-- SECCIÓN: Bienvenida -->
+    <section class="bienvenida">
+      <h2>Conocé nuestro Complejo en Nono</h2>
+      <p>¡Hola! Estamos emocionados de que estés aquí, explorando todo lo que nuestro complejo tiene para ofrecer.</p>
+      <p>En el Complejo Las Sierras, sabemos que unas vacaciones en plena naturaleza son una de las experiencias más enriquecedoras que puedes disfrutar.</p>
+      <p><strong>Ubicación Privilegiada:</strong> Estamos estratégicamente ubicados en un entorno natural único, cercano a los principales atractivos turísticos.</p>
+      <p><strong>¡Abiertos a partir de Diciembre 2025!</strong></p>
+    </section>
+
+    <!-- SECCIÓN: Galería -->
+    <section class="galeria">
+      <div class="galeria-item">
+        <img src="img/cabania-exterior.jpeg" alt="Cabaña exterior" loading="lazy" />
+        <h4>Cabañas Equipadas</h4>
+      </div>
+      <div class="galeria-item">
+        <img src="img/pileta.jpeg" alt="Pileta" loading="lazy" />
+        <h4>Pileta Semiolímpica</h4>
+      </div>
+      <div class="galeria-item">
+        <img src="img/rio-nono.jpeg" alt="Río Nono" loading="lazy" />
+        <h4>Río Privado</h4>
+      </div>
+      <div class="galeria-item">
+        <img src="img/parque-arbolado.jpeg" alt="Parque Arbolado" loading="lazy" />
+        <h4>Parque Natural</h4>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Mapa -->
+    <section class="mapa">
+      <h3>¿Dónde estamos?</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.6303673882415!2d-65.0075354848899!3d-31.80279637969114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d293195c26865%3A0x6fde6c81ce868359!2sComplejo%20Las%20Sierras!5e0!3m2!1ses-419!2sar!4v1713720749325!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- SECCIÓN: Reseñas -->
+    <section class="reseñas">
+      <h3>Lo que dicen nuestros visitantes</h3>
+      <div class="slider">
+        <div class="slide active">
+          <p>“Hermoso lugar. Muy limpio y rodeado de naturaleza. Ideal para desconectar.”</p>
+          <span class="autor">— María González ⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="slide">
+          <p>“La atención fue excelente. Volveremos sin dudarlo. ¡Muy recomendable!”</p>
+          <span class="autor">— Carlos Funes ⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="slide">
+          <p>“Nos encantó la pileta y el parque. Los chicos se divirtieron un montón.”</p>
+          <span class="autor">— Laura D. ⭐⭐⭐⭐✰</span>
+        </div>
+        <div class="slide">
+          <p>“Estuvimos una semana y fue perfecta. Lugar tranquilo, cómodo y familiar.”</p>
+          <span class="autor">— Javier y Milagros ⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="slide">
+          <p>“Excelente ubicación cerca del río. Volveremos en verano.”</p>
+          <span class="autor">— Camila T. ⭐⭐⭐⭐✰</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== BOTÓN WHATSAPP ===================== -->
+  <a class="whatsapp" href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola,+quisiera+hacer+una+consulta+sobre+el+Complejo+Las+Sierras" target="_blank" aria-label="Escribinos por WhatsApp">
+    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="WhatsApp" />
+  </a>
+
+  <!-- ===================== FORMULARIO DE RESERVA ===================== -->
+  <section class="formulario-container">
+    <h2 class="titulo-formulario">Consultá disponibilidad de fechas</h2>
+    <div data-include="_partial-formulario.html"></div>
+  </section>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="includes.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="formulario-reserva.js" defer></script>
+
+  <!-- ===================== FOOTER ===================== -->
+<div data-include="footer.html" data-include-root="true"></div>
+
+
+</body>
+</html>

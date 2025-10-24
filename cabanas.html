@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <!-- =========================================================
+  = 1) META / SEO
+  ========================================================= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cabañas equipadas en Nono con acceso al río y piscina. Unidades simples y especiales. Reservá por WhatsApp o formulario." />
+  <meta name="theme-color" content="#476D54" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cabañas · Complejo Las Sierras" />
+  <meta property="og:description" content="Cabañas equipadas en Nono, con parque, pileta y río. Elegí tu unidad y reservá online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/logo-las-sierras.png" />
+
+  <!-- =========================================================
+  = 2) FUENTES / ICONO / CSS
+  ========================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo-las-sierras.png" type="image/png">
+  <link rel="stylesheet" href="style.css?v=8">
+
+  <!-- Quita la clase no-js apenas carga -->
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+
+<body class="cab-page">
+  <!-- =========================================================
+  = 3) ENLACE SALTAR AL CONTENIDO (ACCESIBILIDAD)
+  ========================================================= -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =========================================================
+  = 4) HEADER (INCLUDE DINÁMICO)
+  =    data-include-root="true" para resolver rutas absolutas del repo
+  ========================================================= -->
+  <div data-include="header.html" data-include-root="true"></div>
+
+  <!-- =========================================================
+  = 5) HERO / BANNER PRINCIPAL
+  ========================================================= -->
+  <section class="banner cab-hero" aria-labelledby="titulo-cabanas">
+    <div class="banner__inner">
+      <h1 id="titulo-cabanas">Cabañas</h1>
+      <p class="banner__subtitle">Confort en la naturaleza de Nono</p>
+      <div class="botones-banner" role="group" aria-label="Acciones">
+        <a class="btn btn--primary" href="reserva.html">Reservar ahora</a>
+        <a class="btn" href="#unidades">Ver unidades</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  = 6) MAIN
+  ========================================================= -->
+  <main id="contenido" tabindex="-1">
+    <!-- =======================================
+    = 6.1) MIGAS / BREADCRUMB
+    ======================================== -->
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Cabañas</li>
+      </ol>
+    </nav>
+
+    <!-- =======================================
+    = 6.2) INTRO CABAÑAS
+    ======================================== -->
+    <section class="cab-intro-mejorada" aria-labelledby="intro-title">
+      <div class="intro-contenido">
+        <h2 id="intro-title">Nuestras Cabañas</h2>
+        <p class="intro-subtitulo">
+          Ideales para familias y grupos. Totalmente equipadas y rodeadas de un parque arbolado con acceso directo a la <strong>piscina</strong> y al <strong>río</strong>.
+        </p>
+      </div>
+
+      <div class="intro-iconos" role="list">
+        <div class="icono-item" role="listitem">
+          <!-- icono mascotas -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.63 21.94a2 2 0 0 1-3.26 0l-4-6.02a2 2 0 0 1 .4-2.75 2 2 0 0 1 2.86-.4l3 1.99 3-2a2 2 0 0 1 2.86.4 2 2 0 0 1 .4 2.75l-4 6.02z"/><path d="M16.19 11.23a2 2 0 0 1 .4 2.75l-4 6.02a2 2 0 0 1-3.26 0l-4-6.02a2 2 0 0 1 .4-2.75 2 2 0 0 1 2.86-.4l3 1.99 3-2a2 2 0 0 1 2.86.4z"/><path d="M12.43 3.01a2 2 0 0 1 2.86-.4 2 2 0 0 1 .4 2.75l-4 6.02a2 2 0 0 1-3.26 0l-4-6.02a2 2 0 0 1 .4-2.75 2 2 0 0 1 2.86-.4l3 1.99z"/></svg>
+          <span>Aceptamos <strong>mascotas</strong></span>
+        </div>
+        <div class="icono-item" role="listitem">
+          <!-- icono reloj -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Check in: <strong>14:00</strong> / Check out: <strong>10:00</strong></span>
+        </div>
+        <div class="icono-item" role="listitem">
+          <!-- icono cama -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"></path><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+          <span>Incluye <strong>frazadas y almohada</strong> (sin ropa blanca)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================
+    = 6.3) UNIDADES
+    ======================================== -->
+    <section id="unidades" class="cab-unidades" aria-labelledby="unidades-title">
+      <h2 id="unidades-title">Elegí tu cabaña</h2>
+
+      <div class="cards cab-cards" role="list">
+        <!-- ---------- Cabaña Simple ---------- -->
+        <article class="card cab-card" role="listitem">
+          <div class="carousel" aria-label="Galería Cabaña Simple">
+            <div class="carousel__viewport">
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Simple/Exterior1.jpeg" alt="Exterior con parrilla, Cabaña Simple" loading="lazy" decoding="async">
+              </div>
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Simple/Matrimonial.jpeg" alt="Dormitorio matrimonial, Cabaña Simple" loading="lazy" decoding="async">
+              </div>
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Simple/Cuchetas.jpeg" alt="Cuchetas, Cabaña Simple" loading="lazy" decoding="async">
+              </div>
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Simple/bano.jpeg" alt="Baño completo, Cabaña Simple" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="carousel__controls">
+              <button class="carousel__btn" type="button" data-prev aria-label="Anterior">‹</button>
+              <button class="carousel__btn" type="button" data-next aria-label="Siguiente">›</button>
+            </div>
+            <div class="carousel__dots" aria-label="Paginación"></div>
+          </div>
+
+          <div class="card__body">
+            <h3 class="h3">Cabaña Simple</h3>
+            <p class="muted">Capacidad: hasta 6 huéspedes</p>
+            <ul>
+              <li>1 dormitorio matrimonial + 4 cuchetas</li>
+              <li>Cocina equipada: anafe, heladerita, vajilla</li>
+              <li>Baño completo con ducha</li>
+              <li>Parrilla c/ asador y cochera</li>
+            </ul>
+            <div class="cta">
+              <p>Ideal para parejas con niños o grupos.</p>
+              <a class="btn btn--primary" href="reserva.html?unidad=Caba%C3%B1a%20Simple">Reservar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Cabaña Especial ---------- -->
+        <article class="card cab-card" role="listitem">
+          <div class="carousel" aria-label="Galería Cabaña Especial">
+            <div class="carousel__viewport">
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Especial/Exterior8.jpeg" alt="Exterior con deck, Cabaña Especial" loading="lazy" decoding="async">
+              </div>
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Especial/dormitorio-doble.jpeg" alt="Dormitorio matrimonial, Cabaña Especial" loading="lazy" decoding="async">
+              </div>
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Especial/Camas.jpeg" alt="Dormitorio doble, Cabaña Especial" loading="lazy" decoding="async">
+              </div>
+              <div class="carousel__slide">
+                <img src="img/Cabanas/Especial/Cocina1.jpeg" alt="Cocina completa, Cabaña Especial" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="carousel__controls">
+              <button class="carousel__btn" type="button" data-prev aria-label="Anterior">‹</button>
+              <button class="carousel__btn" type="button" data-next aria-label="Siguiente">›</button>
+            </div>
+            <div class="carousel__dots" aria-label="Paginación"></div>
+          </div>
+
+          <div class="card__body">
+            <h3 class="h3">Cabaña Especial</h3>
+            <p class="muted">Capacidad: hasta 6 huéspedes</p>
+            <ul>
+              <li>1 dormitorio matrimonial</li>
+              <li>Cocina completa con horno y heladera</li>
+              <li>Baño completo con ducha</li>
+              <li>Parrilla c/ asador y cochera</li>
+            </ul>
+            <div class="cta">
+              <p>Más espacio y comodidad para familias grandes.</p>
+              <a class="btn btn--primary" href="reserva.html?unidad=Caba%C3%B1a%20Especial">Reservar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================
+    = 6.4) EQUIPAMIENTO GENERAL
+    ======================================== -->
+    <section class="cab-equip" aria-labelledby="equip-title">
+      <h2 id="equip-title">Equipamiento incluido</h2>
+      <div class="cards cab-cards">
+        <article class="card cab-card">
+          <div class="card__body">
+            <h3 class="h3">Ambientes</h3>
+            <ul>
+              <li>Ropa de cama: <strong>solo frazadas y almohada</strong></li>
+              <li>Ventiladores</li>
+              <li>TV</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card cab-card">
+          <div class="card__body">
+            <h3 class="h3">Cocina</h3>
+            <ul>
+              <li>Heladera/frigobar, anafe/horno</li>
+              <li>Vajilla completa para 6</li>
+              <li>Pava y utensilios básicos para cocinar</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card cab-card">
+          <div class="card__body">
+            <h3 class="h3">Exteriores</h3>
+            <ul>
+              <li>Parrilla individual</li>
+              <li>Mesa y sillas</li>
+              <li>Cochera techada</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+  = 7) BLOQUE FINAL CTA + INFO
+  ========================================================= -->
+  <section class="seccion-final-combinada" aria-labelledby="politicas-title">
+    <h2 id="politicas-title">Todo listo para tu estadía</h2>
+
+    <div class="info-cards-grid">
+      <div class="info-card">
+        <!-- icono piscina -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6c.75-1.5 2.17-2.5 3.9-2.5 2.25 0 4.1 1.84 4.1 4.1 0 .73-.2 1.41-.54 2.01l-3.02 4.08a1 1 0 0 0 .8 1.61h9.28a1 1 0 0 0 .8-1.61L18.54 9.6c-.34-.6-.54-1.28-.54-2.01 0-2.26 1.85-4.1 4.1-4.1 1.73 0 3.15 1 3.9 2.5"></path><path d="M3 10.5c.75-1.5 2.17-2.5 3.9-2.5 2.25 0 4.1 1.84 4.1 4.1 0 .73-.2 1.41-.54 2.01l-3.02 4.08a1 1 0 0 0 .8 1.61h9.28a1 1 0 0 0 .8-1.61L18.54 14.1c-.34-.6-.54-1.28-.54-2.01 0-2.26 1.85-4.1 4.1-4.1 1.73 0 3.15 1 3.9 2.5"></path></svg>
+        <h3>Piscina Semiolímpica</h3>
+        <p>Disfrutá de un chapuzón refrescante con vistas a las sierras. Acceso incluido para todos nuestros huéspedes.</p>
+      </div>
+
+      <div class="info-card">
+        <!-- icono check -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <h3>Políticas e Info Útil</h3>
+        <ul>
+          <li><strong>Horario de silencio:</strong> 23:00 a 08:00 hs.</li>
+          <li><strong>Seña de reserva:</strong> 30% para confirmar.</li>
+          <li><strong>Mascotas:</strong> Bienvenidas, cuidando el lugar.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final-cta-bloque">
+      <h3>¿Listos para descansar en las sierras?</h3>
+      <p>Tu lugar en la naturaleza te está esperando. Consultanos disponibilidad o reservá directamente.</p>
+      <div class="cta-botones">
+        <!-- Nota: parámetro con ñ URL-encoded -->
+        <a class="btn btn--primary" href="reserva.html?unidad=Caba%C3%B1a">Reservar ahora</a>
+        <a class="btn btn--whatsapp" href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola%2C+quisiera+consultar+por+caba%C3%B1as" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  = 8) BOTÓN FLOTANTE WHATSAPP
+  ========================================================= -->
+  <a class="whatsapp"
+     href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola%2C+quisiera+hacer+una+consulta+sobre+las+caba%C3%B1as"
+     target="_blank" rel="noopener"
+     aria-label="Escribinos por WhatsApp">
+    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="" width="32" height="32" />
+  </a>
+
+  <!-- =========================================================
+  = 9) FOOTER (INCLUDE DINÁMICO)
+  ========================================================= -->
+  <div data-include="footer.html" data-include-root="true"></div>
+
+  <!-- =========================================================
+  = 10) SCRIPTS
+  =     includes.js inyecta header/footer (defer) y luego el carrusel
+  ========================================================= -->
+  <script src="includes.js" defer></script>
+  <script>
+    // =========================================================
+    // CAROUSEL (accesible, con teclado y swipe)
+    // =========================================================
+    (() => {
+      document.querySelectorAll('.carousel').forEach(initCarousel);
+
+      function initCarousel(root){
+        const viewport = root.querySelector('.carousel__viewport');
+        const slides   = Array.from(viewport.children);
+        const prevBtn  = root.querySelector('[data-prev]');
+        const nextBtn  = root.querySelector('[data-next]');
+        const dotsWrap = root.querySelector('.carousel__dots');
+        let i = 0;
+
+        // Crear puntos
+        slides.forEach((_, idx) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'carousel__dot';
+          b.setAttribute('aria-label', 'Ir a la imagen ' + (idx + 1));
+          b.addEventListener('click', () => go(idx));
+          dotsWrap.appendChild(b);
+        });
+
+        function update(){
+          viewport.style.transform = 'translateX(' + (-i * 100) + '%)';
+          dotsWrap.querySelectorAll('.carousel__dot').forEach((d, idx) => {
+            d.setAttribute('aria-current', String(idx === i));
+          });
+        }
+        function go(n){
+          i = (n + slides.length) % slides.length;
+          update();
+        }
+
+        // Controles
+        prevBtn.addEventListener('click', () => go(i - 1));
+        nextBtn.addEventListener('click', () => go(i + 1));
+
+        // Teclado
+        root.setAttribute('tabindex', '0');
+        root.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft')  prevBtn.click();
+          if (e.key === 'ArrowRight') nextBtn.click();
+        });
+
+        // Swipe básico
+        let startX = null;
+        root.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+        root.addEventListener('touchend',   e => {
+          if (startX == null) return;
+          const dx = e.changedTouches[0].clientX - startX;
+          if (Math.abs(dx) > 40) (dx > 0 ? prevBtn : nextBtn).click();
+          startX = null;
+        }, { passive: true });
+
+        update();
+      }
+    })();
+  </script>
+</body>
+</html>

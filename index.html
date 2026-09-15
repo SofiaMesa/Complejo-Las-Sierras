@@ -1,138 +1,478 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es-AR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio | Complejo Las Sierras</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; frame-src https://www.google.com https://maps.google.com; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <title>Complejo Las Sierras | Cabañas, bungalows y acampe en Nono, Córdoba</title>
+  <meta name="description" content="Cabañas y bungalows equipados, acampe, pileta semiolímpica y parque arbolado cerca del Río Chico de Nono, Traslasierra (Córdoba). Solicitá tu reserva online.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://complejolassierras.com/">
+  <meta name="theme-color" content="#2b3a28">
 
-  <!-- ===================== FUENTES ===================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Compartir en redes (Open Graph / WhatsApp / Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Complejo Las Sierras">
+  <meta property="og:title" content="Complejo Las Sierras · Nono, Córdoba">
+  <meta property="og:description" content="Cabañas y bungalows equipados, acampe, pileta semiolímpica y parque arbolado cerca del Río Chico de Nono, Traslasierra (Córdoba). Solicitá tu reserva online.">
+  <meta property="og:url" content="https://complejolassierras.com/">
+  <meta property="og:image" content="https://complejolassierras.com/img/marca/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pileta y parque arbolado del Complejo Las Sierras en Nono, Córdoba">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- ===================== FAVICON ===================== -->
-  <link rel="icon" href="img/logo-las-sierras.png" type="image/png" />
+  <!-- Íconos -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
-  <!-- ===================== ESTILOS ===================== -->
-  <link rel="stylesheet" href="style.css?v=4" />
-</head>
-<body>
-  <!-- ===================== HEADER ===================== -->
-<div data-include="header.html"></div>
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Poppins:wght@400;500;600&amp;display=swap">
 
-  <!-- ===================== MENÚ LATERAL ===================== -->
-  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
-  <div class="sidebar" id="sidebar">
-    <button class="close-btn" onclick="closeMenu()">×</button>
-    <div class="logo-sidebar">
-      <img src="img/logo-las-sierras.png" alt="Logo Complejo Las Sierras" />
+  <link rel="stylesheet" href="style.css?v=20260915">
+<link rel="preload" as="image" type="image/webp" imagesrcset="img/fotos/complejo-pileta-800.webp 800w, img/fotos/complejo-pileta-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LodgingBusiness", "name": "Complejo Las Sierras", "description": "Cabañas, bungalows y acampe en Nono, Valle de Traslasierra, Córdoba. Pileta semiolímpica y parque arbolado cerca del Río Chico de Nono.", "url": "https://complejolassierras.com/", "image": ["https://complejolassierras.com/img/marca/og-image.jpg"], "logo": "https://complejolassierras.com/img/marca/logo-las-sierras-400.png", "telephone": "+54 9 11 6024-8224", "email": "lassierrascamping@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Nono", "addressRegion": "Córdoba", "addressCountry": "AR"}, "hasMap": "https://maps.app.goo.gl/BMtsw9uUsFprToTA7", "checkinTime": "14:00", "checkoutTime": "10:00", "petsAllowed": true, "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Pileta semiolímpica", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Parrilla", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Cochera", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Proveeduría", "value": true}], "sameAs": ["https://www.instagram.com/complejolassierras/", "https://www.facebook.com/complejolassierras/"]}</script>
+</head><body class="has-mobile-bar page-home">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- ================= HEADER (igual en todas las páginas) ================= -->
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Complejo Las Sierras – Inicio">
+      <picture>
+        <source srcset="img/marca/logo-las-sierras-96.webp 1x, img/marca/logo-las-sierras-192.webp 2x" type="image/webp">
+        <img src="img/marca/logo-las-sierras-96.png" width="52" height="48" alt="">
+      </picture>
+      <span class="brand__text">
+        <span class="brand__name">Las Sierras</span>
+        <span class="brand__place">Nono · Córdoba</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Principal">
+      <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="cabanas.html">Cabañas</a></li>
+          <li><a href="bungalows.html">Bungalows</a></li>
+          <li><a href="acampe.html">Acampe</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header-cta" href="reserva.html">Solicitar reserva</a>
+    <button class="menu-toggle" type="button" aria-controls="menu-mobile" aria-expanded="false" data-menu-open>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="visually-hidden">Abrir menú</span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="menu-mobile" data-drawer aria-hidden="true">
+  <div class="drawer__backdrop" data-menu-close></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menú">
+    <div class="drawer__top">
+      <img src="img/marca/logo-las-sierras-96.png" width="58" height="54" alt="Complejo Las Sierras">
+      <button class="menu-toggle" type="button" data-menu-close>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span class="visually-hidden">Cerrar menú</span>
+      </button>
     </div>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="cabanas.html">Cabañas</a></li>
-      <li><a href="bungalows.html">Bungalows</a></li>
-      <li><a href="acampe.html">Acampe</a></li>
-      <li><a href="reserva.html">RESERVAR</a></li>
-    </ul>
+    <nav aria-label="Menú mobile">
+      <ul>
+          <li><a href="index.html" aria-current="page">Inicio<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="cabanas.html">Cabañas<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="bungalows.html">Bungalows<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="acampe.html">Acampe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="contacto.html">Contacto<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="drawer__actions">
+      <a class="btn btn--primary btn--block" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+      <a class="btn btn--whatsapp btn--block" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20consulta%20sobre%20el%20Complejo%20Las%20Sierras." target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg>Escribinos por WhatsApp</a>
+    </div>
+    <p class="drawer__info">Check-in 14:00 hs · Check-out 10:00 hs<br>Nono, Traslasierra de Córdoba</p>
+  </div>
+</div>
+
+<main id="contenido">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-titulo">
+    <div class="hero__media"><img src="img/fotos/complejo-pileta-800.webp" srcset="img/fotos/complejo-pileta-800.webp 800w, img/fotos/complejo-pileta-1600.webp 1600w" sizes="100vw" width="800" height="600" alt="Pileta semiolímpica rodeada de parque y sierras en el Complejo Las Sierras" fetchpriority="high" decoding="async"></div>
+    <div class="container">
+      <div class="hero__content">
+        <p class="eyebrow">Nono · Traslasierra · Córdoba</p>
+        <h1 id="hero-titulo">Complejo Las Sierras</h1>
+        <p class="hero__lead">Cabañas, bungalows y acampe en un parque arbolado, con pileta semiolímpica y cerca del Río Chico de Nono.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+          <a class="btn btn--light btn--lg" href="#alojamientos">Ver alojamientos</a>
+        </div>
+        <ul class="hero__facts">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h3.5A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M10 17l5-5-5-5M15 12H3"/></svg>Check-in 14:00 hs</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5.5A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3H9"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Check-out 10:00 hs</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="6.2" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="17.8" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="9.6" cy="5.8" rx="1.8" ry="2.3"/><ellipse cx="14.4" cy="5.8" rx="1.8" ry="2.3"/><path d="M12 12.5c-2.6 0-5.2 3.4-5.2 5.6 0 1.6 1.3 2.4 2.7 2.4 1.1 0 1.6-.6 2.5-.6s1.4.6 2.5.6c1.4 0 2.7-.8 2.7-2.4 0-2.2-2.6-5.6-5.2-5.6z"/></svg>Mascotas bienvenidas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSCADOR RÁPIDO: lleva los datos al formulario de reserva -->
+  <div class="container quick-book-wrap">
+    <form class="quick-book" action="reserva.html" method="get" data-quick-book aria-labelledby="qb-titulo">
+      <div class="quick-book__title">
+        <h2 id="qb-titulo">Consultá disponibilidad</h2>
+        <p>Completá lo básico y seguí con tu solicitud.</p>
+      </div>
+      <div class="quick-book__grid">
+        <div class="field field--unit">
+          <label for="qb-unidad">Alojamiento</label>
+          <select class="select" id="qb-unidad" name="unidad">
+            <option value="">Elegí una opción</option>
+<optgroup label="Cabañas">
+<option value="cabana-simple">Cabaña Simple</option>
+<option value="cabana-especial">Cabaña Especial</option>
+</optgroup>
+<optgroup label="Bungalows">
+<option value="bungalow-simple">Bungalow Simple (baños compartidos)</option>
+<option value="bungalow-bano-exterior">Bungalow con baño exterior privado</option>
+<option value="bungalow-bano-interno">Bungalow con baño interno</option>
+</optgroup>
+<optgroup label="Otras opciones">
+<option value="sin-preferencia">Sin preferencia (que me asesoren)</option>
+</optgroup>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qb-checkin">Ingreso</label>
+          <input class="input" type="date" id="qb-checkin" name="checkin">
+        </div>
+        <div class="field">
+          <label for="qb-checkout">Egreso</label>
+          <input class="input" type="date" id="qb-checkout" name="checkout">
+        </div>
+        <div class="field">
+          <label for="qb-huespedes">Huéspedes</label>
+          <select class="select" id="qb-huespedes" name="huespedes">
+            <option value="">—</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">Más de 6</option>
+          </select>
+        </div>
+        <div class="quick-book__submit">
+          <button class="btn btn--green btn--lg btn--block" type="submit">Continuar<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </form>
   </div>
 
-  <!-- ===================== BANNER ===================== -->
-  <section class="banner">
-    <h1>Complejo Las Sierras</h1>
-    <p>Tu escape natural en el corazón de Nono</p>
-    <div class="botones-banner">
-      <a class="btn-banner" href="reserva.html">RESERVAR AHORA</a>
-      <a href="cabanas.html">Ver Cabañas</a>
-      <a href="bungalows.html">Ver Bungalows</a>
+  <!-- DESTACADOS -->
+  <section class="section" aria-labelledby="destacados-titulo">
+    <div class="container">
+      <h2 id="destacados-titulo" class="visually-hidden">Lo que vas a encontrar</h2>
+      <ul class="highlights">
+        <li class="highlight"><span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 19c1.7 0 1.7-1.2 3.3-1.2S7 19 8.7 19s1.7-1.2 3.3-1.2 1.7 1.2 3.3 1.2 1.7-1.2 3.4-1.2S20.3 19 22 19"/><path d="M2 14.5c1.7 0 1.7-1.2 3.3-1.2s1.7 1.2 3.4 1.2 1.7-1.2 3.3-1.2 1.7 1.2 3.3 1.2 1.7-1.2 3.4-1.2 1.6 1.2 3.3 1.2"/><path d="M8 12V5.5a2 2 0 0 1 3.5-1.3M16 12V5.5a2 2 0 0 1 3.5-1.3M8 7.5h8M8 10.5h8"/></svg></span><strong>Pileta semiolímpica</strong><span>Con solarium para descansar al sol.</span></li>
+        <li class="highlight"><span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22v-5"/><path d="M12 2 6 10h3l-4 6h14l-4-6h3z"/></svg></span><strong>Parque arbolado</strong><span>Sombra, verde y tranquilidad.</span></li>
+        <li class="highlight"><span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 2 .5 3 1"/><path d="M3 12c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 2 .5 3 1"/><path d="M3 17c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 2 .5 3 1"/></svg></span><strong>Cerca del río</strong><span>Cercanía al Río Chico de Nono.</span></li>
+        <li class="highlight"><span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5c3.9 0 6.5-2.6 6.5-6.2 0-4.6-4.4-6.4-5.1-11.8-3 2-4.2 4.8-3.9 7.6-1.3-.6-2-1.9-2.1-3.3-1.4 1.6-1.9 3.6-1.9 5.5 0 3.6 2.6 8.2 6.5 8.2z"/><path d="M12 21.5c-1.7 0-2.8-1.2-2.8-2.8 0-2 2.8-3.2 2.8-5.4 1.1 1.1 2.8 2.9 2.8 5.4 0 1.6-1.1 2.8-2.8 2.8z"/></svg></span><strong>Parrilla y cochera</strong><span>En cada cabaña y bungalow.</span></li>
+        <li class="highlight"><span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9 5 4h14l1.5 5"/><path d="M3.5 9a2.8 2.8 0 0 0 5.7 0 2.8 2.8 0 0 0 5.6 0 2.8 2.8 0 0 0 5.7 0"/><path d="M5 11.5V20h14v-8.5M10 20v-5h4v5"/></svg></span><strong>Proveeduría</strong><span>Hielo, bebidas, leña y carbón.</span></li>
+        <li class="highlight"><span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="6.2" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="17.8" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="9.6" cy="5.8" rx="1.8" ry="2.3"/><ellipse cx="14.4" cy="5.8" rx="1.8" ry="2.3"/><path d="M12 12.5c-2.6 0-5.2 3.4-5.2 5.6 0 1.6 1.3 2.4 2.7 2.4 1.1 0 1.6-.6 2.5-.6s1.4.6 2.5.6c1.4 0 2.7-.8 2.7-2.4 0-2.2-2.6-5.6-5.2-5.6z"/></svg></span><strong>Pet friendly</strong><span>Tu mascota también viaja.</span></li>
+      </ul>
     </div>
   </section>
 
-  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
-  <main>
-    <!-- SECCIÓN: Bienvenida -->
-    <section class="bienvenida">
-      <h2>Conocé nuestro Complejo en Nono</h2>
-      <p>¡Hola! Estamos emocionados de que estés aquí, explorando todo lo que nuestro complejo tiene para ofrecer.</p>
-      <p>En el Complejo Las Sierras, sabemos que unas vacaciones en plena naturaleza son una de las experiencias más enriquecedoras que puedes disfrutar.</p>
-      <p><strong>Ubicación Privilegiada:</strong> Estamos estratégicamente ubicados en un entorno natural único, cercano a los principales atractivos turísticos.</p>
-      <p><strong>¡Abiertos a partir de Diciembre 2025!</strong></p>
-    </section>
-
-    <!-- SECCIÓN: Galería -->
-    <section class="galeria">
-      <div class="galeria-item">
-        <img src="img/cabania-exterior.jpeg" alt="Cabaña exterior" loading="lazy" />
-        <h4>Cabañas Equipadas</h4>
+  <!-- EL COMPLEJO -->
+  <section class="section section--sand" aria-labelledby="complejo-titulo">
+    <div class="container split">
+      <div class="media-stack">
+        <img src="img/fotos/parque-arbolado-600.webp" srcset="img/fotos/parque-arbolado-600.webp 600w, img/fotos/parque-arbolado-1000.webp 1000w" sizes="(min-width: 900px) 520px, 90vw" width="600" height="800" alt="Parque arbolado del complejo con quinchos a la sombra" class="media-stack__main" loading="lazy" decoding="async">
+        <img src="img/fotos/rio-chico-nono-600.webp" srcset="img/fotos/rio-chico-nono-600.webp 600w, img/fotos/rio-chico-nono-1000.webp 1000w" sizes="(min-width: 900px) 240px, 40vw" width="600" height="800" alt="Río Chico de Nono rodeado de vegetación" class="media-stack__small" loading="lazy" decoding="async">
       </div>
-      <div class="galeria-item">
-        <img src="img/pileta.jpeg" alt="Pileta" loading="lazy" />
-        <h4>Pileta Semiolímpica</h4>
+      <div class="prose">
+        <p class="eyebrow">El complejo</p>
+        <h2 id="complejo-titulo">Tu escape natural en el corazón de Nono</h2>
+        <p class="lead">Un lugar pensado para desconectar: parque amplio, aire de sierra y todo lo necesario para disfrutar en familia, en pareja o con amigos.</p>
+        <p>Estamos en Nono, en pleno Valle de Traslasierra, cerca de los principales atractivos de la zona. Podés elegir entre cabañas equipadas, bungalows con distintas opciones de baño o nuestra zona de acampe.</p>
+        <ul class="check-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Cabañas y bungalows para hasta 6 personas.</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Acceso a la pileta y al parque para todos los huéspedes.</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Atención directa y personalizada por WhatsApp.</span></li>
+        </ul>
+        <a class="link-arrow" href="#galeria">Ver fotos del complejo<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="galeria-item">
-        <img src="img/rio-nono.jpeg" alt="Río Nono" loading="lazy" />
-        <h4>Cercanía al Río Chico de Nono</h4>
-      </div>
-      <div class="galeria-item">
-        <img src="img/parque-arbolado.jpeg" alt="Parque Arbolado" loading="lazy" />
-        <h4>Parque Natural</h4>
-      </div>
-    </section>
-
-    <!-- SECCIÓN: Mapa -->
-    <section class="mapa">
-      <h3>¿Dónde estamos?</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.6303673882415!2d-65.0075354848899!3d-31.80279637969114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d293195c26865%3A0x6fde6c81ce868359!2sComplejo%20Las%20Sierras!5e0!3m2!1ses-419!2sar!4v1713720749325!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <!-- SECCIÓN: Reseñas -->
-    <section class="reseñas">
-      <h3>Lo que dicen nuestros visitantes</h3>
-      <div class="slider">
-        <div class="slide active">
-          <p>“Hermoso lugar. Muy limpio y rodeado de naturaleza. Ideal para desconectar.”</p>
-          <span class="autor">— María González ⭐⭐⭐⭐⭐</span>
-        </div>
-        <div class="slide">
-          <p>“La atención fue excelente. Volveremos sin dudarlo. ¡Muy recomendable!”</p>
-          <span class="autor">— Carlos Funes ⭐⭐⭐⭐⭐</span>
-        </div>
-        <div class="slide">
-          <p>“Nos encantó la pileta y el parque. Los chicos se divirtieron un montón.”</p>
-          <span class="autor">— Laura D. ⭐⭐⭐⭐✰</span>
-        </div>
-        <div class="slide">
-          <p>“Estuvimos una semana y fue perfecta. Lugar tranquilo, cómodo y familiar.”</p>
-          <span class="autor">— Javier y Milagros ⭐⭐⭐⭐⭐</span>
-        </div>
-        <div class="slide">
-          <p>“Excelente ubicación cerca del río. Volveremos en verano.”</p>
-          <span class="autor">— Camila T. ⭐⭐⭐⭐✰</span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===================== BOTÓN WHATSAPP ===================== -->
-  <a class="whatsapp" href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola!+quisiera+hacer+una+consulta+sobre+el+Complejo+Las+Sierras" target="_blank" aria-label="Escribinos por WhatsApp">
-    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="WhatsApp" />
-  </a>
-
-  <!-- ===================== FORMULARIO DE RESERVA ===================== -->
-  <section class="formulario-container">
-    <h2 class="titulo-formulario">Consultá disponibilidad de fechas</h2>
-    <div data-include="partial-formulario.html"></div>
+    </div>
   </section>
 
-  <!-- ===================== SCRIPTS ===================== -->
-  <script src="includes.js" defer></script>
-  <script src="script.js" defer></script>
-  <script src="formulario-reserva.js" defer></script>
+  <!-- ALOJAMIENTOS -->
+  <section class="section" id="alojamientos" aria-labelledby="alojamientos-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Alojamiento</p>
+        <h2 id="alojamientos-titulo">Elegí cómo querés hospedarte</h2>
+        <p>Todas las unidades tienen parrilla y cochera, y acceso a la pileta y al parque.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="stay-card">
+          <div class="stay-card__media">
+            <img src="img/fotos/cabana-especial-exterior-600.webp" srcset="img/fotos/cabana-especial-exterior-600.webp 600w, img/fotos/cabana-especial-exterior-1000.webp 1000w" sizes="(min-width: 1180px) 380px, (min-width: 700px) 50vw, 100vw" width="600" height="800" alt="Cabaña de ladrillo con galería techada" loading="lazy" decoding="async">
+            <span class="stay-card__tag">Hasta 6 personas</span>
+          </div>
+          <div class="stay-card__body">
+            <h3>Cabañas</h3>
+            <p>Baño completo privado y cocina equipada. Ideales para familias y grupos.</p>
+            <ul class="chips" aria-label="Opciones"><li>Cabaña Simple</li><li>Cabaña Especial</li></ul>
+            <div class="stay-card__footer">
+              <a class="link-arrow" href="cabanas.html">Ver cabañas<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn--outline btn--sm" href="reserva.html?unidad=cabana-simple">Reservar</a>
+            </div>
+          </div>
+        </article>
+        <article class="stay-card">
+          <div class="stay-card__media">
+            <img src="img/fotos/bungalow-exterior-privado-600.webp" srcset="img/fotos/bungalow-exterior-privado-600.webp 600w, img/fotos/bungalow-exterior-privado-1000.webp 909w" sizes="(min-width: 1180px) 380px, (min-width: 700px) 50vw, 100vw" width="600" height="845" alt="Bungalow con techo de paja y puerta roja" loading="lazy" decoding="async">
+            <span class="stay-card__tag">Hasta 6 personas</span>
+          </div>
+          <div class="stay-card__body">
+            <h3>Bungalows</h3>
+            <p>Una opción práctica y rústica, con baño compartido, exterior privado o interno.</p>
+            <ul class="chips" aria-label="Opciones"><li>Simple</li><li>Baño exterior privado</li><li>Baño interno</li></ul>
+            <div class="stay-card__footer">
+              <a class="link-arrow" href="bungalows.html">Ver bungalows<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn--outline btn--sm" href="reserva.html?unidad=bungalow-simple">Reservar</a>
+            </div>
+          </div>
+        </article>
+        <article class="stay-card">
+          <div class="stay-card__media">
+            <img src="img/fotos/acampe-quinchos-600.webp" srcset="img/fotos/acampe-quinchos-600.webp 600w, img/fotos/acampe-quinchos-1000.webp 1000w" sizes="(min-width: 1180px) 380px, (min-width: 700px) 50vw, 100vw" width="600" height="800" alt="Parcelas de acampe con quinchos de paja bajo los árboles" loading="lazy" decoding="async">
+            <span class="stay-card__tag">Sin reserva previa</span>
+          </div>
+          <div class="stay-card__body">
+            <h3>Acampe</h3>
+            <p>Parcelas con o sin quincho, con parrilla y tomacorriente. Siempre hay lugar.</p>
+            <ul class="chips" aria-label="Incluye"><li>Parrilla</li><li>Tomacorriente</li><li>Baños con agua caliente</li></ul>
+            <div class="stay-card__footer">
+              <a class="link-arrow" href="acampe.html">Ver acampe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-  <!-- ===================== FOOTER ===================== -->
-<div data-include="footer.html"></div>
+  <!-- GALERÍA -->
+  <section class="section section--sand" id="galeria" aria-labelledby="galeria-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Galería</p>
+        <h2 id="galeria-titulo">Conocé el complejo</h2>
+        <p>Tocá cualquier foto para verla en grande.</p>
+      </div>
+    <div class="gallery" data-gallery>
+      <button class="gallery__item gallery__item--wide gallery__item--tall" type="button" data-full="img/fotos/complejo-pileta-1600.webp" data-caption="Pileta semiolímpica y parque">
+        <img src="img/fotos/complejo-pileta-800.webp" srcset="img/fotos/complejo-pileta-800.webp 800w, img/fotos/complejo-pileta-1600.webp 1600w" sizes="(min-width: 760px) 25vw, 50vw" width="800" height="600" alt="Pileta semiolímpica y parque" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Pileta semiolímpica y parque</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/cabana-simple-exterior-1000.webp" data-caption="Cabaña con parrilla bajo los árboles">
+        <img src="img/fotos/cabana-simple-exterior-600.webp" srcset="img/fotos/cabana-simple-exterior-600.webp 600w, img/fotos/cabana-simple-exterior-1000.webp 1000w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Cabaña con parrilla bajo los árboles" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Cabaña con parrilla bajo los árboles</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/bungalow-exterior-privado-2-1000.webp" data-caption="Bungalow en el parque">
+        <img src="img/fotos/bungalow-exterior-privado-2-600.webp" srcset="img/fotos/bungalow-exterior-privado-2-600.webp 600w, img/fotos/bungalow-exterior-privado-2-1000.webp 960w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Bungalow en el parque" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Bungalow en el parque</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/cabana-especial-dormitorio-1000.webp" data-caption="Dormitorio matrimonial de cabaña">
+        <img src="img/fotos/cabana-especial-dormitorio-600.webp" srcset="img/fotos/cabana-especial-dormitorio-600.webp 600w, img/fotos/cabana-especial-dormitorio-1000.webp 1000w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Dormitorio matrimonial de cabaña" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Dormitorio matrimonial de cabaña</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/rio-chico-nono-1000.webp" data-caption="Río Chico de Nono">
+        <img src="img/fotos/rio-chico-nono-600.webp" srcset="img/fotos/rio-chico-nono-600.webp 600w, img/fotos/rio-chico-nono-1000.webp 1000w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Río Chico de Nono" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Río Chico de Nono</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/pileta-parque-1000.webp" data-caption="Mesas junto a la pileta">
+        <img src="img/fotos/pileta-parque-600.webp" srcset="img/fotos/pileta-parque-600.webp 600w, img/fotos/pileta-parque-1000.webp 1000w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Mesas junto a la pileta" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Mesas junto a la pileta</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/acampe-parrilla-1000.webp" data-caption="Parrilla en la zona de acampe">
+        <img src="img/fotos/acampe-parrilla-600.webp" srcset="img/fotos/acampe-parrilla-600.webp 600w, img/fotos/acampe-parrilla-1000.webp 1000w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Parrilla en la zona de acampe" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Parrilla en la zona de acampe</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/bungalow-bano-interno-cocina-1000.webp" data-caption="Cocina de bungalow">
+        <img src="img/fotos/bungalow-bano-interno-cocina-600.webp" srcset="img/fotos/bungalow-bano-interno-cocina-600.webp 600w, img/fotos/bungalow-bano-interno-cocina-1000.webp 1000w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Cocina de bungalow" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Cocina de bungalow</span>
+      </button>
+      <button class="gallery__item" type="button" data-full="img/fotos/acampe-mascotas-1000.webp" data-caption="Mascota disfrutando del acampe">
+        <img src="img/fotos/acampe-mascotas-600.webp" srcset="img/fotos/acampe-mascotas-600.webp 600w, img/fotos/acampe-mascotas-1000.webp 960w" sizes="(min-width: 760px) 25vw, 50vw" width="600" height="800" alt="Mascota disfrutando del acampe" loading="lazy" decoding="async">
+        <span class="visually-hidden">Ampliar foto: Mascota disfrutando del acampe</span>
+      </button>
+    </div>
+  </div>
+  </section>
 
+  <!-- CÓMO RESERVAR -->
+  <section class="section" aria-labelledby="pasos-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Cómo reservar</p>
+        <h2 id="pasos-titulo">Reservar es simple</h2>
+        <p>La solicitud no tiene costo y no te compromete.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Enviás tu solicitud</h3><p>Elegí la unidad, las fechas y la cantidad de huéspedes en el formulario.</p></li>
+        <li><h3>Te contactamos</h3><p>Verificamos la disponibilidad y te respondemos por WhatsApp o email con el valor de la estadía.</p></li>
+        <li><h3>Confirmás tu reserva</h3><p>Con una seña del 30% tu lugar queda asegurado.</p></li>
+      </ol>
+      <div class="btn-row btn-row--center mt-2">
+        <a class="btn btn--primary btn--lg" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+      </div>
+    </div>
+  </section>
 
+  
+  <section class="section section--green" id="info-estadia" aria-labelledby="info-estadia-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Antes de viajar</p>
+        <h2 id="info-estadia-titulo">Información de la estadía</h2>
+        <p>Lo importante para organizar tu llegada a cabañas y bungalows.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h3.5A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M10 17l5-5-5-5M15 12H3"/></svg></span>
+          <div><h3>Check-in</h3><p><span class="time-pill">14:00 hs</span><br>Ingreso a partir de este horario.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5.5A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3H9"/><path d="M16 17l5-5-5-5M21 12H9"/></svg></span>
+          <div><h3>Check-out</h3><p><span class="time-pill">10:00 hs</span><br>Egreso hasta este horario.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 19 7.5H5"/><path d="M16.5 13.8h.1"/></svg></span>
+          <div><h3>Seña</h3><p>La reserva se confirma con una seña del <strong>30%</strong>, una vez verificada la disponibilidad.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7.5 14.5h9"/></svg></span>
+          <div><h3>Ropa de cama</h3><p>Incluimos <strong>frazadas y almohadas</strong>. Traé sábanas y toallas.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="6.2" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="17.8" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="9.6" cy="5.8" rx="1.8" ry="2.3"/><ellipse cx="14.4" cy="5.8" rx="1.8" ry="2.3"/><path d="M12 12.5c-2.6 0-5.2 3.4-5.2 5.6 0 1.6 1.3 2.4 2.7 2.4 1.1 0 1.6-.6 2.5-.6s1.4.6 2.5.6c1.4 0 2.7-.8 2.7-2.4 0-2.2-2.6-5.6-5.2-5.6z"/></svg></span>
+          <div><h3>Mascotas</h3><p>Son bienvenidas, cuidando el lugar y a los demás huéspedes.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a6.8 6.8 0 0 0 11 11z"/></svg></span>
+          <div><h3>Horario de descanso</h3><p>Silencio de <strong>23:00 a 08:00 hs</strong>.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 2.5 20h19z"/><path d="M12 3v0M12 20l-3.5-6h7z"/><path d="M1.5 20h21"/></svg></span>
+          <div><h3>Acampe</h3><p>Sin reserva previa. Ingreso desde las <strong>12:00 hs</strong>.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="section" id="ubicacion" aria-labelledby="ubicacion-titulo">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Ubicación</p>
+        <h2 id="ubicacion-titulo">¿Dónde estamos?</h2>
+        <p class="lead">En Nono, en el Valle de Traslasierra, provincia de Córdoba: un pueblo serrano rodeado de ríos y paisajes de montaña.</p>
+        <ul class="check-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Nono, Córdoba, Argentina</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 2 .5 3 1"/><path d="M3 12c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 2 .5 3 1"/><path d="M3 17c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 2 .5 3 1"/></svg><span>Cerca del Río Chico de Nono</span></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--green" href="https://maps.app.goo.gl/BMtsw9uUsFprToTA7" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H16a3.5 3.5 0 0 0 0-7H8a3.5 3.5 0 0 1 0-7h7.5"/></svg>Cómo llegar</a>
+          <a class="btn btn--outline" href="https://maps.app.goo.gl/BMtsw9uUsFprToTA7" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>Ver opiniones en Google</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe title="Mapa: ubicación del Complejo Las Sierras en Nono, Córdoba" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.6303673882415!2d-65.0075354848899!3d-31.80279637969114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d293195c26865%3A0x6fde6c81ce868359!2sComplejo%20Las%20Sierras!5e0!3m2!1ses-419!2sar!4v1713720749325!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" aria-labelledby="cta-titulo">
+    <div class="container">
+      <div class="cta-band">
+        <div class="cta-band__media"><img src="img/fotos/sierras-nono-800.webp" srcset="img/fotos/sierras-nono-800.webp 800w, img/fotos/sierras-nono-1600.webp 1600w" sizes="(min-width: 1180px) 1180px, 100vw" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
+        <p class="eyebrow">Reservas</p>
+        <h2 id="cta-titulo">¿Listos para descansar en las sierras?</h2>
+        <p>Contanos qué fechas buscás y te respondemos con la disponibilidad y el valor de la estadía.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+          <a class="btn btn--light btn--lg" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20consulta%20sobre%20el%20Complejo%20Las%20Sierras." target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg>Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="lightbox" data-lightbox aria-label="Visor de fotos">
+  <p class="lightbox__count" data-lb-count></p>
+  <div class="lightbox__stage"><img src="data:," alt="" data-lb-img></div>
+  <p class="lightbox__caption" data-lb-caption></p>
+  <button class="lightbox__btn lightbox__close" type="button" data-lb-close aria-label="Cerrar visor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lightbox__btn lightbox__prev" type="button" data-lb-prev aria-label="Foto anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+  <button class="lightbox__btn lightbox__next" type="button" data-lb-next aria-label="Foto siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
+</dialog>
+
+<!-- ================= FOOTER (igual en todas las páginas) ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/marca/logo-las-sierras-192.png" width="88" height="82" alt="Complejo Las Sierras" loading="lazy">
+        <p>Cabañas, bungalows y acampe en un parque arbolado de Nono, en el Valle de Traslasierra, Córdoba.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/complejolassierras/" target="_blank" rel="noopener" aria-label="Instagram de Complejo Las Sierras"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.3 6.7h.1"/></svg></a>
+          <a href="https://www.facebook.com/complejolassierras/" target="_blank" rel="noopener" aria-label="Facebook de Complejo Las Sierras"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.5 21.5v-7.6h2.6l.4-3h-3V9c0-.9.3-1.5 1.5-1.5h1.6V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6v7.6z"/></svg></a>
+          <a href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20consulta%20sobre%20el%20Complejo%20Las%20Sierras." target="_blank" rel="noopener" aria-label="WhatsApp de Complejo Las Sierras"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg></a>
+        </div>
+      </div>
+      <nav aria-label="Alojamiento">
+        <h2>Alojamiento</h2>
+        <ul class="footer-list">
+          <li><a href="cabanas.html">Cabañas</a></li>
+          <li><a href="bungalows.html">Bungalows</a></li>
+          <li><a href="acampe.html">Acampe</a></li>
+          <li><a href="reserva.html">Solicitar reserva</a></li>
+          <li><a href="contacto.html#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <ul class="footer-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg><a href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20consulta%20sobre%20el%20Complejo%20Las%20Sierras." target="_blank" rel="noopener">+54 9 11 6024-8224</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg><a href="mailto:lassierrascamping@gmail.com">lassierrascamping@gmail.com</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://maps.app.goo.gl/BMtsw9uUsFprToTA7" target="_blank" rel="noopener">Nono, Córdoba, Argentina</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tu estadía</h2>
+        <ul class="footer-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h3.5A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M10 17l5-5-5-5M15 12H3"/></svg><span>Check-in: 14:00 hs</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5.5A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3H9"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span>Check-out: 10:00 hs</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="6.2" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="17.8" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="9.6" cy="5.8" rx="1.8" ry="2.3"/><ellipse cx="14.4" cy="5.8" rx="1.8" ry="2.3"/><path d="M12 12.5c-2.6 0-5.2 3.4-5.2 5.6 0 1.6 1.3 2.4 2.7 2.4 1.1 0 1.6-.6 2.5-.6s1.4.6 2.5.6c1.4 0 2.7-.8 2.7-2.4 0-2.2-2.6-5.6-5.2-5.6z"/></svg><span>Mascotas bienvenidas</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Complejo Las Sierras · Nono, Córdoba</p>
+      <p><a href="#contenido">Volver arriba ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<aside aria-label="Contacto rápido">
+<a class="wa-float" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20consulta%20sobre%20el%20Complejo%20Las%20Sierras." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg></a>
+
+<!-- Barra de acciones fija (solo celulares) -->
+<div class="mobile-bar" data-mobile-bar>
+  <a class="btn btn--whatsapp" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20consulta%20sobre%20el%20Complejo%20Las%20Sierras." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg><span>WhatsApp</span></a>
+  <a class="btn btn--primary" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+</div>
+</aside>
+<script src="script.js?v=20260915" defer></script>
 </body>
 </html>

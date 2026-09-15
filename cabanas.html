@@ -1,348 +1,336 @@
 <!DOCTYPE html>
-<html lang="es-AR" class="no-js">
+<html lang="es-AR">
 <head>
-  <!-- =========================================================
-  = 1) META / SEO
-  ========================================================= -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Cabañas equipadas en Nono con acceso al río y piscina. Unidades simples y especiales. Reservá por WhatsApp o formulario." />
-  <meta name="theme-color" content="#476D54" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; frame-src https://www.google.com https://maps.google.com; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <title>Cabañas en Nono, Córdoba | Complejo Las Sierras</title>
+  <meta name="description" content="Cabañas equipadas para hasta 6 personas en Nono, Traslasierra: baño privado, cocina, parrilla y cochera. Pileta semiolímpica y parque. Solicitá tu reserva.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://complejolassierras.com/cabanas.html">
+  <meta name="theme-color" content="#2b3a28">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Cabañas · Complejo Las Sierras" />
-  <meta property="og:description" content="Cabañas equipadas en Nono, con parque, pileta y río. Elegí tu unidad y reservá online." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="img/logo-las-sierras.png" />
+  <!-- Compartir en redes (Open Graph / WhatsApp / Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Complejo Las Sierras">
+  <meta property="og:title" content="Cabañas en Nono, Córdoba | Complejo Las Sierras">
+  <meta property="og:description" content="Cabañas equipadas para hasta 6 personas en Nono, Traslasierra: baño privado, cocina, parrilla y cochera. Pileta semiolímpica y parque. Solicitá tu reserva.">
+  <meta property="og:url" content="https://complejolassierras.com/cabanas.html">
+  <meta property="og:image" content="https://complejolassierras.com/img/marca/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pileta y parque arbolado del Complejo Las Sierras en Nono, Córdoba">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- =========================================================
-  = 2) FUENTES / ICONO / CSS
-  ========================================================= -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="img/logo-las-sierras.png" type="image/png">
-  <link rel="stylesheet" href="style.css?v=8">
+  <!-- Íconos -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
-  <!-- Quita la clase no-js apenas carga -->
-  <script>document.documentElement.classList.remove('no-js');</script>
-</head>
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Poppins:wght@400;500;600&amp;display=swap">
 
-<body class="cab-page">
-  <!-- =========================================================
-  = 3) ENLACE SALTAR AL CONTENIDO (ACCESIBILIDAD)
-  ========================================================= -->
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <link rel="stylesheet" href="style.css?v=20260915">
+<link rel="preload" as="image" type="image/webp" imagesrcset="img/fotos/cabana-especial-exterior-600.webp 600w, img/fotos/cabana-especial-exterior-1000.webp 1000w" imagesizes="100vw" fetchpriority="high">
+</head><body class="has-mobile-bar">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- =========================================================
-  = 4) HEADER (INCLUDE DINÁMICO)
-  ========================================================= -->
-  <div data-include="header.html"></div>
+<!-- ================= HEADER (igual en todas las páginas) ================= -->
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Complejo Las Sierras – Inicio">
+      <picture>
+        <source srcset="img/marca/logo-las-sierras-96.webp 1x, img/marca/logo-las-sierras-192.webp 2x" type="image/webp">
+        <img src="img/marca/logo-las-sierras-96.png" width="52" height="48" alt="">
+      </picture>
+      <span class="brand__text">
+        <span class="brand__name">Las Sierras</span>
+        <span class="brand__place">Nono · Córdoba</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Principal">
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cabanas.html" aria-current="page">Cabañas</a></li>
+          <li><a href="bungalows.html">Bungalows</a></li>
+          <li><a href="acampe.html">Acampe</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header-cta" href="reserva.html">Solicitar reserva</a>
+    <button class="menu-toggle" type="button" aria-controls="menu-mobile" aria-expanded="false" data-menu-open>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="visually-hidden">Abrir menú</span>
+    </button>
+  </div>
+</header>
 
-  <!-- =========================================================
-  = 5) HERO / BANNER PRINCIPAL
-  ========================================================= -->
-  <section class="banner cab-hero" aria-labelledby="titulo-cabanas">
-    <div class="banner__inner">
-      <h1 id="titulo-cabanas">Cabañas</h1>
-      <p class="banner__subtitle">Confort en la naturaleza de Nono</p>
-      <div class="botones-banner" role="group" aria-label="Acciones">
-        <a class="btn btn--primary" href="reserva.html">Reservar ahora</a>
-        <a class="btn" href="#unidades">Ver unidades</a>
+<div class="drawer" id="menu-mobile" data-drawer aria-hidden="true">
+  <div class="drawer__backdrop" data-menu-close></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menú">
+    <div class="drawer__top">
+      <img src="img/marca/logo-las-sierras-96.png" width="58" height="54" alt="Complejo Las Sierras">
+      <button class="menu-toggle" type="button" data-menu-close>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span class="visually-hidden">Cerrar menú</span>
+      </button>
+    </div>
+    <nav aria-label="Menú mobile">
+      <ul>
+          <li><a href="index.html">Inicio<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="cabanas.html" aria-current="page">Cabañas<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="bungalows.html">Bungalows<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="acampe.html">Acampe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+          <li><a href="contacto.html">Contacto<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="drawer__actions">
+      <a class="btn btn--primary btn--block" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+      <a class="btn btn--whatsapp btn--block" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20consultar%20por%20las%20caba%C3%B1as%20del%20Complejo%20Las%20Sierras." target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg>Escribinos por WhatsApp</a>
+    </div>
+    <p class="drawer__info">Check-in 14:00 hs · Check-out 10:00 hs<br>Nono, Traslasierra de Córdoba</p>
+  </div>
+</div>
+
+<main id="contenido">
+  
+  <section class="page-hero">
+    <div class="page-hero__media"><img src="img/fotos/cabana-especial-exterior-600.webp" srcset="img/fotos/cabana-especial-exterior-600.webp 600w, img/fotos/cabana-especial-exterior-1000.webp 1000w" sizes="100vw" width="600" height="800" alt="Cabaña de ladrillo con galería techada" class="pos-60" fetchpriority="high" decoding="async"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ubicación en el sitio">
+        <ol><li><a href="index.html">Inicio</a></li><li aria-current="page">Cabañas</li></ol>
+      </nav>
+      <h1>Cabañas</h1>
+      <p>Confort en la naturaleza de Nono: cabañas equipadas para hasta 6 personas, con parrilla, cochera y acceso a la pileta.</p>
+      <div class="btn-row"><a class="btn btn--primary" href="reserva.html?unidad=cabana-simple"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a><a class="btn btn--light" href="#unidades">Ver cabañas</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="unidades" aria-labelledby="unidades-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Nuestras cabañas</p>
+        <h2 id="unidades-titulo">Elegí tu cabaña</h2>
+        <p>Ideales para familias y grupos, rodeadas de un parque arbolado con acceso a la pileta.</p>
+      </div>
+      
+      <article class="unit" id="cabana-simple" aria-labelledby="cabana-simple-titulo">
+        <div class="unit__media">
+        <div class="carousel" data-carousel aria-roledescription="carrusel" aria-label="Fotos: Cabaña Simple">
+          <div class="carousel__track" tabindex="0" aria-label="Deslizá para ver más fotos">
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="1 de 4">
+            <img src="img/fotos/cabana-simple-exterior-600.webp" srcset="img/fotos/cabana-simple-exterior-600.webp 600w, img/fotos/cabana-simple-exterior-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Exterior de la Cabaña Simple con parrilla" loading="lazy" decoding="async">
+          </div>
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="2 de 4">
+            <img src="img/fotos/cabana-simple-matrimonial-600.webp" srcset="img/fotos/cabana-simple-matrimonial-600.webp 600w, img/fotos/cabana-simple-matrimonial-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Dormitorio matrimonial de la Cabaña Simple" loading="lazy" decoding="async">
+          </div>
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="3 de 4">
+            <img src="img/fotos/cabana-simple-cuchetas-600.webp" srcset="img/fotos/cabana-simple-cuchetas-600.webp 600w, img/fotos/cabana-simple-cuchetas-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Cuchetas de la Cabaña Simple" loading="lazy" decoding="async">
+          </div>
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="4 de 4">
+            <img src="img/fotos/cabana-simple-bano-600.webp" srcset="img/fotos/cabana-simple-bano-600.webp 600w, img/fotos/cabana-simple-bano-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Baño completo de la Cabaña Simple" loading="lazy" decoding="async">
+          </div>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Foto anterior" data-prev><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Foto siguiente" data-next><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="carousel__dots" data-dots></div>
+          <span class="carousel__count" aria-hidden="true" data-count>1 / 4</span>
+        </div>
+        </div>
+        <div class="unit__body">
+          <h3 id="cabana-simple-titulo">Cabaña Simple</h3>
+          <ul class="unit__facts"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.2A6.5 6.5 0 0 1 21.5 20"/></svg>Hasta 6 huéspedes</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h18v2.5a5.5 5.5 0 0 1-5.5 5.5h-7A5.5 5.5 0 0 1 3 14.5z"/><path d="M6 12V5.5A2 2 0 0 1 8 3.5c1 0 1.7.6 2 1.5M7 20l-1 1.5M17 20l1 1.5"/></svg>Baño privado</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v7a2 2 0 0 0 4 0V3M8 10v11M16.5 21V3c-1.9 0-3.5 2.2-3.5 6v4.5h3.5"/></svg>Cocina equipada</li></ul>
+          <ul class="unit__list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>1 dormitorio matrimonial + 4 cuchetas</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Cocina equipada: anafe, heladerita y vajilla</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Baño completo con ducha</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Parrilla con asador y cochera</span></li>
+          </ul>
+          <p class="unit__note">Ideal para parejas con chicos o grupos de amigos.</p>
+          <div class="unit__actions btn-row">
+            <a class="btn btn--primary" href="reserva.html?unidad=cabana-simple"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar esta unidad</a>
+          </div>
+        </div>
+      </article>
+      <article class="unit unit--reverse" id="cabana-especial" aria-labelledby="cabana-especial-titulo">
+        <div class="unit__media">
+        <div class="carousel" data-carousel aria-roledescription="carrusel" aria-label="Fotos: Cabaña Especial">
+          <div class="carousel__track" tabindex="0" aria-label="Deslizá para ver más fotos">
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="1 de 4">
+            <img src="img/fotos/cabana-especial-exterior-600.webp" srcset="img/fotos/cabana-especial-exterior-600.webp 600w, img/fotos/cabana-especial-exterior-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Exterior de la Cabaña Especial con galería" loading="lazy" decoding="async">
+          </div>
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="2 de 4">
+            <img src="img/fotos/cabana-especial-dormitorio-600.webp" srcset="img/fotos/cabana-especial-dormitorio-600.webp 600w, img/fotos/cabana-especial-dormitorio-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Dormitorio matrimonial de la Cabaña Especial" loading="lazy" decoding="async">
+          </div>
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="3 de 4">
+            <img src="img/fotos/cabana-especial-camas-600.webp" srcset="img/fotos/cabana-especial-camas-600.webp 600w, img/fotos/cabana-especial-camas-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Dormitorio con cuchetas de la Cabaña Especial" loading="lazy" decoding="async">
+          </div>
+          <div class="carousel__slide" role="group" aria-roledescription="foto" aria-label="4 de 4">
+            <img src="img/fotos/cabana-especial-cocina-600.webp" srcset="img/fotos/cabana-especial-cocina-600.webp 600w, img/fotos/cabana-especial-cocina-1000.webp 1000w" sizes="(min-width: 1180px) 600px, (min-width: 900px) 50vw, 100vw" width="600" height="800" alt="Cocina completa de la Cabaña Especial" loading="lazy" decoding="async">
+          </div>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Foto anterior" data-prev><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Foto siguiente" data-next><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="carousel__dots" data-dots></div>
+          <span class="carousel__count" aria-hidden="true" data-count>1 / 4</span>
+        </div>
+        </div>
+        <div class="unit__body">
+          <h3 id="cabana-especial-titulo">Cabaña Especial</h3>
+          <ul class="unit__facts"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.2A6.5 6.5 0 0 1 21.5 20"/></svg>Hasta 6 huéspedes</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h18v2.5a5.5 5.5 0 0 1-5.5 5.5h-7A5.5 5.5 0 0 1 3 14.5z"/><path d="M6 12V5.5A2 2 0 0 1 8 3.5c1 0 1.7.6 2 1.5M7 20l-1 1.5M17 20l1 1.5"/></svg>Baño privado</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v7a2 2 0 0 0 4 0V3M8 10v11M16.5 21V3c-1.9 0-3.5 2.2-3.5 6v4.5h3.5"/></svg>Cocina completa</li></ul>
+          <ul class="unit__list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>1 dormitorio matrimonial</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Cocina completa con horno y heladera</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Baño completo con ducha</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Parrilla con asador y cochera</span></li>
+          </ul>
+          <p class="unit__note">Más espacio y comodidad para familias grandes.</p>
+          <div class="unit__actions btn-row">
+            <a class="btn btn--primary" href="reserva.html?unidad=cabana-especial"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar esta unidad</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--sand" aria-labelledby="equipamiento-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Qué incluye</p>
+        <h2 id="equipamiento-titulo">Equipamiento de las cabañas</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 19v-12M2.5 14.5h19V19M21.5 14.5V12a3 3 0 0 0-3-3h-7.5v5.5"/><circle cx="7" cy="11" r="2"/></svg></span>
+          <h3>Ambientes</h3>
+          <ul><li>Frazadas y almohadas (sin ropa blanca)</li><li>Ventiladores</li><li>TV</li></ul>
+        </div>
+        <div class="card">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v7a2 2 0 0 0 4 0V3M8 10v11M16.5 21V3c-1.9 0-3.5 2.2-3.5 6v4.5h3.5"/></svg></span>
+          <h3>Cocina</h3>
+          <ul><li>Heladera o frigobar</li><li>Anafe u horno, según la cabaña</li><li>Vajilla para 6 y utensilios básicos</li></ul>
+        </div>
+        <div class="card">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5c3.9 0 6.5-2.6 6.5-6.2 0-4.6-4.4-6.4-5.1-11.8-3 2-4.2 4.8-3.9 7.6-1.3-.6-2-1.9-2.1-3.3-1.4 1.6-1.9 3.6-1.9 5.5 0 3.6 2.6 8.2 6.5 8.2z"/><path d="M12 21.5c-1.7 0-2.8-1.2-2.8-2.8 0-2 2.8-3.2 2.8-5.4 1.1 1.1 2.8 2.9 2.8 5.4 0 1.6-1.1 2.8-2.8 2.8z"/></svg></span>
+          <h3>Exteriores</h3>
+          <ul><li>Parrilla individual con asador</li><li>Mesa y sillas</li><li>Cochera techada</li></ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-  = 6) MAIN
-  ========================================================= -->
-  <main id="contenido" tabindex="-1">
-    <!-- =======================================
-    = 6.1) MIGAS / BREADCRUMB
-    ======================================== -->
-    <nav class="breadcrumb" aria-label="Ruta de navegación">
-      <ol>
-        <li><a href="index.html">Inicio</a></li>
-        <li aria-current="page">Cabañas</li>
-      </ol>
-    </nav>
-
-    <!-- =======================================
-    = 6.2) INTRO CABAÑAS
-    ======================================== -->
-    <section class="cab-intro-mejorada" aria-labelledby="intro-title">
-      <div class="intro-contenido">
-        <h2 id="intro-title">Nuestras Cabañas</h2>
-        <p class="intro-subtitulo">
-          Ideales para familias y grupos. Totalmente equipadas y rodeadas de un parque arbolado con acceso directo a la <strong>piscina</strong> y al <strong>río</strong>.
-        </p>
+  
+  <section class="section section--green" id="info-estadia" aria-labelledby="info-estadia-titulo">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Antes de viajar</p>
+        <h2 id="info-estadia-titulo">Información de la estadía</h2>
+        <p>Lo importante para organizar tu llegada a cabañas y bungalows.</p>
       </div>
-
-      <div class="intro-iconos" role="list">
-        <div class="icono-item" role="listitem">
-          <!-- icono mascotas -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.63 21.94a2 2 0 0 1-3.26 0l-4-6.02a2 2 0 0 1 .4-2.75 2 2 0 0 1 2.86-.4l3 1.99 3-2a2 2 0 0 1 2.86.4 2 2 0 0 1 .4 2.75l-4 6.02z"/><path d="M16.19 11.23a2 2 0 0 1 .4 2.75l-4 6.02a2 2 0 0 1-3.26 0l-4-6.02a2 2 0 0 1 .4-2.75 2 2 0 0 1 2.86-.4l3 1.99 3-2a2 2 0 0 1 2.86.4z"/><path d="M12.43 3.01a2 2 0 0 1 2.86-.4 2 2 0 0 1 .4 2.75l-4 6.02a2 2 0 0 1-3.26 0l-4-6.02a2 2 0 0 1 .4-2.75 2 2 0 0 1 2.86-.4l3 1.99z"/></svg>
-          <span>Aceptamos <strong>mascotas</strong></span>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h3.5A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M10 17l5-5-5-5M15 12H3"/></svg></span>
+          <div><h3>Check-in</h3><p><span class="time-pill">14:00 hs</span><br>Ingreso a partir de este horario.</p></div>
         </div>
-        <div class="icono-item" role="listitem">
-          <!-- icono reloj -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          <span>Check in: <strong>14:00</strong> / Check out: <strong>10:00</strong></span>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5.5A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3H9"/><path d="M16 17l5-5-5-5M21 12H9"/></svg></span>
+          <div><h3>Check-out</h3><p><span class="time-pill">10:00 hs</span><br>Egreso hasta este horario.</p></div>
         </div>
-        <div class="icono-item" role="listitem">
-          <!-- icono cama -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"></path><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
-          <span>Incluye <strong>frazadas y almohada</strong> (sin ropa blanca)</span>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 19 7.5H5"/><path d="M16.5 13.8h.1"/></svg></span>
+          <div><h3>Seña</h3><p>La reserva se confirma con una seña del <strong>30%</strong>, una vez verificada la disponibilidad.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7.5 14.5h9"/></svg></span>
+          <div><h3>Ropa de cama</h3><p>Incluimos <strong>frazadas y almohadas</strong>. Traé sábanas y toallas.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="6.2" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="17.8" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="9.6" cy="5.8" rx="1.8" ry="2.3"/><ellipse cx="14.4" cy="5.8" rx="1.8" ry="2.3"/><path d="M12 12.5c-2.6 0-5.2 3.4-5.2 5.6 0 1.6 1.3 2.4 2.7 2.4 1.1 0 1.6-.6 2.5-.6s1.4.6 2.5.6c1.4 0 2.7-.8 2.7-2.4 0-2.2-2.6-5.6-5.2-5.6z"/></svg></span>
+          <div><h3>Mascotas</h3><p>Son bienvenidas, cuidando el lugar y a los demás huéspedes.</p></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a6.8 6.8 0 0 0 11 11z"/></svg></span>
+          <div><h3>Horario de descanso</h3><p>Silencio de <strong>23:00 a 08:00 hs</strong>.</p></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- =======================================
-    = 6.3) UNIDADES
-    ======================================== -->
-    <section id="unidades" class="cab-unidades" aria-labelledby="unidades-title">
-      <h2 id="unidades-title">Elegí tu cabaña</h2>
-
-      <div class="cards cab-cards" role="list">
-        <!-- ---------- Cabaña Simple ---------- -->
-        <article class="card cab-card" role="listitem">
-          <div class="carousel" aria-label="Galería Cabaña Simple">
-            <div class="carousel__viewport">
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Simple\exterior1.jpeg" alt="Exterior con parrilla, Cabaña Simple" loading="lazy" decoding="async">
-              </div>
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Simple\matrimonial.jpeg" alt="Dormitorio matrimonial, Cabaña Simple" loading="lazy" decoding="async">
-              </div>
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Simple\cuchetas.jpeg" alt="Cuchetas, Cabaña Simple" loading="lazy" decoding="async">
-              </div>
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Simple\bano.jpeg" alt="Baño completo, Cabaña Simple" loading="lazy" decoding="async">
-              </div>
-            </div>
-            <div class="carousel__controls">
-              <button class="carousel__btn" type="button" data-prev aria-label="Anterior">‹</button>
-              <button class="carousel__btn" type="button" data-next aria-label="Siguiente">›</button>
-            </div>
-            <div class="carousel__dots" aria-label="Paginación"></div>
-          </div>
-
-          <div class="card__body">
-            <h3 class="h3">Cabaña Simple</h3>
-            <p class="muted">Capacidad: hasta 6 huéspedes</p>
-            <ul>
-              <li>1 dormitorio matrimonial + 4 cuchetas</li>
-              <li>Cocina equipada: anafe, heladerita, vajilla</li>
-              <li>Baño completo con ducha</li>
-              <li>Parrilla c/ asador y cochera</li>
-            </ul>
-            <div class="cta">
-              <p>Ideal para parejas con niños o grupos.</p>
-              <a class="btn btn--primary" href="reserva.html?unidad=Caba%C3%B1a%20Simple">Reservar</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ---------- Cabaña Especial ---------- -->
-        <article class="card cab-card" role="listitem">
-          <div class="carousel" aria-label="Galería Cabaña Especial">
-            <div class="carousel__viewport">
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Especial\exterior8.jpeg" alt="Exterior con deck, Cabaña Especial" loading="lazy" decoding="async">
-              </div>
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Especial\dormitorio-doble.jpeg" alt="Dormitorio matrimonial, Cabaña Especial" loading="lazy" decoding="async">
-              </div>
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Especial\camas.jpeg" alt="Dormitorio doble, Cabaña Especial" loading="lazy" decoding="async">
-              </div>
-              <div class="carousel__slide">
-                <img src="img\Cabanas\Especial\cocina1.jpeg" alt="Cocina completa, Cabaña Especial" loading="lazy" decoding="async">
-              </div>
-            </div>
-            <div class="carousel__controls">
-              <button class="carousel__btn" type="button" data-prev aria-label="Anterior">‹</button>
-              <button class="carousel__btn" type="button" data-next aria-label="Siguiente">›</button>
-            </div>
-            <div class="carousel__dots" aria-label="Paginación"></div>
-          </div>
-
-          <div class="card__body">
-            <h3 class="h3">Cabaña Especial</h3>
-            <p class="muted">Capacidad: hasta 6 huéspedes</p>
-            <ul>
-              <li>1 dormitorio matrimonial</li>
-              <li>Cocina completa con horno y heladera</li>
-              <li>Baño completo con ducha</li>
-              <li>Parrilla c/ asador y cochera</li>
-            </ul>
-            <div class="cta">
-              <p>Más espacio y comodidad para familias grandes.</p>
-              <a class="btn btn--primary" href="reserva.html?unidad=Caba%C3%B1a%20Especial">Reservar</a>
-            </div>
-          </div>
-        </article>
+  
+  <section class="section" aria-labelledby="cta-titulo">
+    <div class="container">
+      <div class="cta-band">
+        <div class="cta-band__media"><img src="img/fotos/complejo-pileta-800.webp" srcset="img/fotos/complejo-pileta-800.webp 800w, img/fotos/complejo-pileta-1600.webp 1600w" sizes="(min-width: 1180px) 1180px, 100vw" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
+        <p class="eyebrow">Reservas</p>
+        <h2 id="cta-titulo">¿Listos para descansar en las sierras?</h2>
+        <p>Tu lugar en la naturaleza te está esperando. Enviá tu solicitud y te confirmamos disponibilidad.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+          <a class="btn btn--light btn--lg" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20consultar%20por%20las%20caba%C3%B1as%20del%20Complejo%20Las%20Sierras." target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg>Consultar por WhatsApp</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <!-- =======================================
-    = 6.4) EQUIPAMIENTO GENERAL
-    ======================================== -->
-    <section class="cab-equip" aria-labelledby="equip-title">
-      <h2 id="equip-title">Equipamiento incluido</h2>
-      <div class="cards cab-cards">
-        <article class="card cab-card">
-          <div class="card__body">
-            <h3 class="h3">Ambientes</h3>
-            <ul>
-              <li>Ropa de cama: <strong>solo frazadas y almohada</strong></li>
-              <li>Ventiladores</li>
-              <li>TV</li>
-            </ul>
-          </div>
-        </article>
-        <article class="card cab-card">
-          <div class="card__body">
-            <h3 class="h3">Cocina</h3>
-            <ul>
-              <li>Heladera/frigobar, anafe/horno</li>
-              <li>Vajilla completa para 6</li>
-              <li>Pava y utensilios básicos para cocinar</li>
-            </ul>
-          </div>
-        </article>
-        <article class="card cab-card">
-          <div class="card__body">
-            <h3 class="h3">Exteriores</h3>
-            <ul>
-              <li>Parrilla individual</li>
-              <li>Mesa y sillas</li>
-              <li>Cochera techada</li>
-            </ul>
-          </div>
-        </article>
+<!-- ================= FOOTER (igual en todas las páginas) ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/marca/logo-las-sierras-192.png" width="88" height="82" alt="Complejo Las Sierras" loading="lazy">
+        <p>Cabañas, bungalows y acampe en un parque arbolado de Nono, en el Valle de Traslasierra, Córdoba.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/complejolassierras/" target="_blank" rel="noopener" aria-label="Instagram de Complejo Las Sierras"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.3 6.7h.1"/></svg></a>
+          <a href="https://www.facebook.com/complejolassierras/" target="_blank" rel="noopener" aria-label="Facebook de Complejo Las Sierras"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.5 21.5v-7.6h2.6l.4-3h-3V9c0-.9.3-1.5 1.5-1.5h1.6V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6v7.6z"/></svg></a>
+          <a href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20consultar%20por%20las%20caba%C3%B1as%20del%20Complejo%20Las%20Sierras." target="_blank" rel="noopener" aria-label="WhatsApp de Complejo Las Sierras"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg></a>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <!-- =========================================================
-  = 7) BLOQUE FINAL CTA + INFO
-  ========================================================= -->
-  <section class="seccion-final-combinada" aria-labelledby="politicas-title">
-    <h2 id="politicas-title">Todo listo para tu estadía</h2>
-
-    <div class="info-cards-grid">
-      <div class="info-card">
-        <!-- icono piscina -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6c.75-1.5 2.17-2.5 3.9-2.5 2.25 0 4.1 1.84 4.1 4.1 0 .73-.2 1.41-.54 2.01l-3.02 4.08a1 1 0 0 0 .8 1.61h9.28a1 1 0 0 0 .8-1.61L18.54 9.6c-.34-.6-.54-1.28-.54-2.01 0-2.26 1.85-4.1 4.1-4.1 1.73 0 3.15 1 3.9 2.5"></path><path d="M3 10.5c.75-1.5 2.17-2.5 3.9-2.5 2.25 0 4.1 1.84 4.1 4.1 0 .73-.2 1.41-.54 2.01l-3.02 4.08a1 1 0 0 0 .8 1.61h9.28a1 1 0 0 0 .8-1.61L18.54 14.1c-.34-.6-.54-1.28-.54-2.01 0-2.26 1.85-4.1 4.1-4.1 1.73 0 3.15 1 3.9 2.5"></path></svg>
-        <h3>Piscina Semiolímpica</h3>
-        <p>Disfrutá de un chapuzón refrescante con vistas a las sierras. Acceso incluido para todos nuestros huéspedes.</p>
+      <nav aria-label="Alojamiento">
+        <h2>Alojamiento</h2>
+        <ul class="footer-list">
+          <li><a href="cabanas.html">Cabañas</a></li>
+          <li><a href="bungalows.html">Bungalows</a></li>
+          <li><a href="acampe.html">Acampe</a></li>
+          <li><a href="reserva.html">Solicitar reserva</a></li>
+          <li><a href="contacto.html#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <ul class="footer-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg><a href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20consultar%20por%20las%20caba%C3%B1as%20del%20Complejo%20Las%20Sierras." target="_blank" rel="noopener">+54 9 11 6024-8224</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg><a href="mailto:lassierrascamping@gmail.com">lassierrascamping@gmail.com</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://maps.app.goo.gl/BMtsw9uUsFprToTA7" target="_blank" rel="noopener">Nono, Córdoba, Argentina</a></li>
+        </ul>
       </div>
-
-      <div class="info-card">
-        <!-- icono check -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        <h3>Políticas e Info Útil</h3>
-        <ul>
-          <li><strong>Horario de silencio:</strong> 23:00 a 08:00 hs.</li>
-          <li><strong>Seña de reserva:</strong> 30% para confirmar.</li>
-          <li><strong>Mascotas:</strong> Bienvenidas, cuidando el lugar.</li>
+      <div>
+        <h2>Tu estadía</h2>
+        <ul class="footer-list">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h3.5A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M10 17l5-5-5-5M15 12H3"/></svg><span>Check-in: 14:00 hs</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5.5A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3H9"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span>Check-out: 10:00 hs</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="6.2" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="17.8" cy="10.2" rx="1.8" ry="2.3"/><ellipse cx="9.6" cy="5.8" rx="1.8" ry="2.3"/><ellipse cx="14.4" cy="5.8" rx="1.8" ry="2.3"/><path d="M12 12.5c-2.6 0-5.2 3.4-5.2 5.6 0 1.6 1.3 2.4 2.7 2.4 1.1 0 1.6-.6 2.5-.6s1.4.6 2.5.6c1.4 0 2.7-.8 2.7-2.4 0-2.2-2.6-5.6-5.2-5.6z"/></svg><span>Mascotas bienvenidas</span></li>
         </ul>
       </div>
     </div>
-
-    <div class="final-cta-bloque">
-      <h3>¿Listos para descansar en las sierras?</h3>
-      <p>Tu lugar en la naturaleza te está esperando. Consultanos disponibilidad o reservá directamente.</p>
-      <div class="cta-botones">
-        <!-- Nota: parámetro con ñ URL-encoded -->
-        <a class="btn btn--primary" href="reserva.html?unidad=Caba%C3%B1a">Reservar ahora</a>
-        <a class="btn btn--whatsapp" href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola!%2C+quisiera+consultar+por+caba%C3%B1as" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-      </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Complejo Las Sierras · Nono, Córdoba</p>
+      <p><a href="#contenido">Volver arriba ↑</a></p>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- =========================================================
-  = 8) BOTÓN FLOTANTE WHATSAPP
-  ========================================================= -->
-  <a class="whatsapp"
-     href="https://api.whatsapp.com/send/?phone=541160248224&text=Hola!%2C+quisiera+hacer+una+consulta+sobre+las+caba%C3%B1as"
-     target="_blank" rel="noopener"
-     aria-label="Escribinos por WhatsApp">
-    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=32&color=ffffff" alt="" width="32" height="32" />
-  </a>
+<aside aria-label="Contacto rápido">
+<a class="wa-float" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20consultar%20por%20las%20caba%C3%B1as%20del%20Complejo%20Las%20Sierras." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg></a>
 
-  <!-- =========================================================
-  = 9) FOOTER (INCLUDE DINÁMICO)
-  ========================================================= -->
-  <div data-include="footer.html"></div>
-
-  <!-- =========================================================
-  = 10) SCRIPTS
-  =     includes.js inyecta header/footer (defer) y luego el carrusel
-  ========================================================= -->
-  <script src="includes.js" defer></script>
-  <script>
-    // =========================================================
-    // CAROUSEL (accesible, con teclado y swipe)
-    // =========================================================
-    (() => {
-      document.querySelectorAll('.carousel').forEach(initCarousel);
-
-      function initCarousel(root){
-        const viewport = root.querySelector('.carousel__viewport');
-        const slides   = Array.from(viewport.children);
-        const prevBtn  = root.querySelector('[data-prev]');
-        const nextBtn  = root.querySelector('[data-next]');
-        const dotsWrap = root.querySelector('.carousel__dots');
-        let i = 0;
-
-        // Crear puntos
-        slides.forEach((_, idx) => {
-          const b = document.createElement('button');
-          b.type = 'button';
-          b.className = 'carousel__dot';
-          b.setAttribute('aria-label', 'Ir a la imagen ' + (idx + 1));
-          b.addEventListener('click', () => go(idx));
-          dotsWrap.appendChild(b);
-        });
-
-        function update(){
-          viewport.style.transform = 'translateX(' + (-i * 100) + '%)';
-          dotsWrap.querySelectorAll('.carousel__dot').forEach((d, idx) => {
-            d.setAttribute('aria-current', String(idx === i));
-          });
-        }
-        function go(n){
-          i = (n + slides.length) % slides.length;
-          update();
-        }
-
-        // Controles
-        prevBtn.addEventListener('click', () => go(i - 1));
-        nextBtn.addEventListener('click', () => go(i + 1));
-
-        // Teclado
-        root.setAttribute('tabindex', '0');
-        root.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowLeft')  prevBtn.click();
-          if (e.key === 'ArrowRight') nextBtn.click();
-        });
-
-        // Swipe básico
-        let startX = null;
-        root.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-        root.addEventListener('touchend',   e => {
-          if (startX == null) return;
-          const dx = e.changedTouches[0].clientX - startX;
-          if (Math.abs(dx) > 40) (dx > 0 ? prevBtn : nextBtn).click();
-          startX = null;
-        }, { passive: true });
-
-        update();
-      }
-    })();
-  </script>
+<!-- Barra de acciones fija (solo celulares) -->
+<div class="mobile-bar" data-mobile-bar>
+  <a class="btn btn--whatsapp" href="https://wa.me/5491160248224?text=%C2%A1Hola%21%20Quisiera%20consultar%20por%20las%20caba%C3%B1as%20del%20Complejo%20Las%20Sierras." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 1.8a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4z"/><path d="M8.9 7.2c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2z"/></svg><span>WhatsApp</span></a>
+  <a class="btn btn--primary" href="reserva.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Solicitar reserva</a>
+</div>
+</aside>
+<script src="script.js?v=20260915" defer></script>
 </body>
 </html>

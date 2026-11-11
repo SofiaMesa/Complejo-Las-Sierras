@@ -104,6 +104,45 @@ zona horaria **(GMT-03:00) Buenos Aires**.
 
 ---
 
+## Cotización automática (tarifas)
+
+Cada solicitud nueva se guarda con la cotización calculada y el email de aviso la incluye.
+
+**Cómo se calcula** (con los valores de la pestaña **Tarifas** de la planilla):
+
+- **Tarifa por noche** = tarifa hasta 3 personas + adicional por cada persona extra. Con 1 o 2 personas se paga lo mismo que con 3.
+- **Promo 7x5:** cada 7 noches completas se pagan 5, y las noches que sobran se cobran a tarifa normal. Ejemplos: 7 noches → se pagan 5; 10 noches → 8; 14 noches → 10. Con 6 noches se pagan las 6.
+- **Total** = tarifa por noche × noches a pagar.
+- **Seña** = 30 % del total.
+- **Más de 6 personas:** no se calcula automáticamente y en la planilla aparece "cotizar aparte".
+- **"Sin preferencia":** el email y el mensaje de WhatsApp incluyen el precio de todas las unidades.
+
+**Columnas que se agregan a la planilla:** Noches · Tarifa por noche · Noches a pagar · Total estimado · Seña · Enviar cotización.
+La última es un enlace: al tocarlo se abre WhatsApp con el mensaje para el huésped ya escrito.
+**Revisá la disponibilidad antes de enviarlo.**
+
+### Instalación (una sola vez)
+
+1. Pegá el código nuevo de `CODIGO-PARA-COPIAR.txt` en Apps Script, igual que la primera vez, y guardá con Ctrl + S.
+2. Elegí la función **`prepararTarifas`** y tocá **▶ Ejecutar**. Si te vuelve a pedir permisos, aceptalos.
+   Se crea la pestaña **Tarifas** con los precios iniciales y se agregan las columnas nuevas.
+3. **Implementar → Gestionar implementaciones → ✏️ Editar → Versión: Nueva versión → Implementar.**
+   Sin este paso, la web sigue usando el código anterior. La dirección del script no cambia.
+4. Recargá la planilla (F5): arriba aparece el menú **Las Sierras**.
+
+### Cambiar precios
+
+Editá los números de la pestaña **Tarifas**. No modifiques la columna **Clave**.
+Los precios nuevos se usan en las solicitudes que lleguen desde ese momento.
+Para desactivar la promo, poné **7** en "Promo: cada 7 noches se pagan".
+
+### Recalcular una solicitud
+
+Si cambiaste a mano las fechas, la unidad o la cantidad de personas de una fila (o querés cotizar solicitudes viejas):
+seleccioná esas filas y entrá a **Las Sierras → Recalcular cotización de las filas seleccionadas**.
+
+---
+
 ## Cambios futuros en el script
 
 Si modificás `Code.gs` (por ejemplo, para agregar una unidad nueva):
@@ -200,3 +239,50 @@ Podés borrar estos archivos. La web nueva no los necesita:
 
 La carpeta `img/` conserva las fotos originales. La web usa solo las versiones optimizadas
 de `img/fotos/` y `img/marca/`, así que las originales podés guardarlas como respaldo.
+
+---
+
+## Enviar la reserva con los datos para la seña (WhatsApp y mail)
+
+Cuando el huésped confirma que quiere reservar, le mandás los datos de la reserva y de la cuenta para la seña.
+
+1. En la pestaña de solicitudes, hacé clic en cualquier celda de la fila del huésped.
+2. Menú **Las Sierras → 1) Enviar reserva y datos para la seña (fila seleccionada)**.
+3. Se abre una ventana con todo precargado. Podés corregir **unidad** (obligatorio si pidió "Sin preferencia"), **personas**, **total**, **seña**, **vencimiento de la seña** (por defecto, 48 hs desde que abrís la ventana), WhatsApp y email.
+   - Si cambiás la unidad o las personas, el total y la seña se recalculan con la pestaña **Tarifas**.
+   - Si cambiás el total a mano, la seña se recalcula al 30 %; también la podés escribir a mano.
+4. Revisá la **vista previa** (pestañas WhatsApp y mail) y elegí:
+   - **Enviar por WhatsApp:** abre WhatsApp con el mensaje escrito; lo enviás vos desde ahí.
+   - **Enviar por mail:** tocá dos veces (la segunda confirma). El mail sale con el nombre "Complejo Las Sierras", con copia oculta a lassierrascamping@gmail.com y, si el huésped responde, la respuesta llega a ese correo.
+5. Cada envío queda anotado en las columnas **Reserva enviada** (canal, fecha y hora) y **Vence la seña**. Se crean solas la primera vez.
+
+El mail sale desde la cuenta de Google de quien usa el menú. Conviene usarlo con la cuenta del complejo.
+
+**Instalación:** pegá el código nuevo de `CODIGO-PARA-COPIAR.txt`, guardá (Ctrl + S) y recargá la planilla (F5). La primera vez que uses la opción, Google pide permiso para mostrar ventanas en la planilla: aceptalo. Este cambio no afecta a la web, pero si querés mantener todo al día hacé igual **Implementar → Gestionar implementaciones → Editar → Nueva versión**.
+
+**Textos editables** (al final de `Code.gs`): `CUENTA_SENA` (datos bancarios), `PLAZO_SENA_HORAS` y `POLITICA_CANCELACION`.
+
+## Confirmar la reserva cuando llega la seña
+
+Cuando verificás en el homebanking que la seña se acreditó:
+
+1. Hacé clic en la fila del huésped.
+2. Menú **Las Sierras → 2) Enviar confirmación de reserva: seña recibida (fila seleccionada)**.
+3. Revisá la unidad, las personas, el total y la **seña recibida**. Si recibiste otro importe, corregilo: el saldo se recalcula.
+4. Elegí **Enviar confirmación por WhatsApp** y/o **Enviar confirmación por mail**.
+5. Queda anotado en la columna **Confirmación enviada** (canal, fecha, hora e importe de la seña).
+
+Si en la fila no figura que se enviaron los datos para la seña, la ventana muestra un aviso para que lo verifiques antes de confirmar.
+
+## Columna Estado (automática)
+
+- **No enviada:** llegó la solicitud y todavía no se mandaron los datos para la seña.
+- **Enviada:** se mandaron los datos para la seña (paso 1).
+- **Confirmada:** se recibió la seña y se mandó la confirmación (paso 2).
+
+Se usa la columna **Estado** (o **Status**) que ya tengas. Si no existe, se crea una con lista desplegable y colores (gris, amarillo y verde).
+Una reserva confirmada no vuelve a "Enviada" aunque reenvíes los datos de la seña.
+
+Para completar las filas que ya tenías: menú **Las Sierras → Actualizar la columna Estado de todas las filas**. Los estados escritos a mano que no sean estos tres (por ejemplo, "Cancelada") no se tocan.
+
+Si tu columna tiene una lista desplegable con otras opciones, agregale "No enviada", "Enviada" y "Confirmada" (clic derecho en la columna → Validación de datos).
